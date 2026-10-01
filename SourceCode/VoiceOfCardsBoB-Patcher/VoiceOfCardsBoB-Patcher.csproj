@@ -19,13 +19,14 @@
     <PublishDir>$(MSBuildThisFileDirectory)..\..\Release\</PublishDir>
   </PropertyGroup>
   <ItemGroup>
-	<EmbeddedResource Include="..\..\GeneratedGameFiles\asset_text_en" LogicalName="Patch.asset_text_en" />
-	<EmbeddedResource Include="..\..\GeneratedGameFiles\localization-string-tables-english(en)_assets_all.bundle" LogicalName="Patch.localization-string-tables-english(en)_assets_all.bundle" />
+	<EmbeddedResource Include="..\..\GeneratedGameFiles\asset_text_jp" LogicalName="Patch.asset_text_jp" />
+	<EmbeddedResource Include="..\..\GeneratedGameFiles\localization-string-tables-japanese(ja)_assets_all.bundle" LogicalName="Patch.localization-string-tables-japanese(ja)_assets_all.bundle" />
 	<EmbeddedResource Include="..\..\GeneratedGameFiles\sharedassets0.assets" LogicalName="Patch.sharedassets0.assets" />
 	<EmbeddedResource Include="..\..\GeneratedGameFiles\sharedassets0.assets.resS" LogicalName="Patch.sharedassets0.assets.resS" />
   </ItemGroup>
   <Target Name="ValidatePatchFiles" BeforeTargets="Publish">
-    <Error Condition="!Exists('..\..\GeneratedGameFiles\asset_text_en')" Text="GeneratedGameFiles\asset_text_en is missing. Run the localization tool and generate game files first." />
-    <Error Condition="!Exists('..\..\GeneratedGameFiles\localization-string-tables-english(en)_assets_all.bundle')" Text="GeneratedGameFiles\localization-string-tables-english(en)_assets_all.bundle is missing. Run the localization tool and generate game files first." />
+    <Error Condition="!Exists('..\..\GeneratedGameFiles\asset_text_jp')" Text="GeneratedGameFiles\asset_text_jp is missing. Run the localization tool and generate game files first." />
+    <Error Condition="!Exists('..\..\GeneratedGameFiles\localization-string-tables-japanese(ja)_assets_all.bundle')" Text="GeneratedGameFiles\localization-string-tables-japanese(ja)_assets_all.bundle is missing. Run the localization tool and generate game files first." />
   </Target>
 </Project>
+

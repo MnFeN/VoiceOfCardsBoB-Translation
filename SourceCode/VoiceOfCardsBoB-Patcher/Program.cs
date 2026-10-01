@@ -9,21 +9,15 @@ namespace VoiceOfCardsPatch
 
         private static readonly PatchEntry[] PatchEntries =
         [
-            new(@"asset_text_en",
-                @"Patch.asset_text_en",
-                @"VoiceofCardsTheBeastsofBurden_Data\StreamingAssets\Windows\asset_text_en"),
+            new(@"asset_text_jp", @"Patch.asset_text_jp", @"VoiceofCardsTheBeastsofBurden_Data\StreamingAssets\Windows\asset_text_jp"),
 
-            new(@"localization-string-tables-english(en)_assets_all.bundle",
-                @"Patch.localization-string-tables-english(en)_assets_all.bundle",
-                @"VoiceofCardsTheBeastsofBurden_Data\StreamingAssets\aa\StandaloneWindows64\localization-string-tables-english(en)_assets_all.bundle"),
+            new(@"localization-string-tables-japanese(ja)_assets_all.bundle",
+                @"Patch.localization-string-tables-japanese(ja)_assets_all.bundle",
+                @"VoiceofCardsTheBeastsofBurden_Data\StreamingAssets\aa\StandaloneWindows64\localization-string-tables-japanese(ja)_assets_all.bundle"),
 
-            new(@"sharedassets0.assets",
-                @"Patch.sharedassets0.assets",
-                @"VoiceofCardsTheBeastsofBurden_Data\sharedassets0.assets"),
+            new(@"sharedassets0.assets", @"Patch.sharedassets0.assets", @"VoiceofCardsTheBeastsofBurden_Data\sharedassets0.assets"),
 
-            new(@"sharedassets0.assets.resS",
-                @"Patch.sharedassets0.assets.resS",
-                @"VoiceofCardsTheBeastsofBurden_Data\sharedassets0.assets.resS")
+            new(@"sharedassets0.assets.resS", @"Patch.sharedassets0.assets.resS", @"VoiceofCardsTheBeastsofBurden_Data\sharedassets0.assets.resS")
         ];
 
         internal enum ExitCode
@@ -65,7 +59,7 @@ namespace VoiceOfCardsPatch
 
             while (true)
             {
-                Console.WriteLine("1. 应用汉化补丁");
+                Console.WriteLine("1. 应用汉化补丁（覆盖日语）");
                 Console.WriteLine("2. 复原原始文件");
                 Console.WriteLine("0. 退出");
                 Console.Write("请选择：");
@@ -122,6 +116,9 @@ namespace VoiceOfCardsPatch
 
             bool success = action == PatchAction.Apply ? patcher.Apply() : patcher.Restore();
 
+            if (success && action == PatchAction.Apply)
+                Console.WriteLine("请在游戏内将文本语言设置为日语以显示中文。");
+
             if (interactive)
                 Pause();
 
@@ -154,3 +151,4 @@ namespace VoiceOfCardsPatch
         }
     }
 }
+

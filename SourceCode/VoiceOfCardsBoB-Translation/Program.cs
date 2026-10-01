@@ -18,7 +18,7 @@ namespace VoiceOfCardsLocalizationTool
             {
                 Console.Clear();
                 Console.WriteLine("Voice of Cards: The Beasts of Burden - Localization Tool");
-                Console.WriteLine("English slot replacement workflow");
+                Console.WriteLine("Japanese slot replacement workflow");
                 Console.WriteLine();
                 Console.WriteLine("1. Generate translation CSV files from OriginalGameFiles");
                 Console.WriteLine("2. Generate GeneratedGameFiles resources from Translation CSV files");

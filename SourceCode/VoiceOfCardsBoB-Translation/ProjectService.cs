@@ -53,26 +53,26 @@ internal sealed class ProjectService
             string jpCsv = GetTextAsset(jpAssets, assetName);
             var enRows = ParseGameTable(enCsv, assetName + " (English)");
             var jpRows = ParseGameTable(jpCsv, assetName + " (Japanese)");
-            var jpByKey = ToUniqueDictionary(jpRows, assetName + " Japanese");
+            var enByKey = ToUniqueDictionary(enRows, assetName + " English");
 
             var rows = new List<TranslationRow>();
-            foreach (var pair in enRows)
+            foreach (var pair in jpRows)
             {
-                if (!jpByKey.TryGetValue(pair.Key, out var jp) || jp == null)
-                    throw new InvalidDataException(assetName + ": Japanese resource is missing key " + pair.Key);
+                if (!enByKey.TryGetValue(pair.Key, out var en) || en == null)
+                    throw new InvalidDataException(assetName + ": English resource is missing key " + pair.Key);
                 rows.Add(new TranslationRow
                 {
                     Key = pair.Key,
-                    English = pair.Value,
-                    Japanese = jp,
+                    English = en,
+                    Japanese = pair.Value,
                     Target = pair.Value
                 });
             }
 
-            var enKeys = new HashSet<string>(enRows.Select(r => r.Key));
-            var jpOnly = jpByKey.Keys.Where(k => !enKeys.Contains(k)).Take(10).ToList();
-            if (jpOnly.Count > 0)
-                throw new InvalidDataException(assetName + ": Japanese resource contains key(s) absent from English: " + string.Join(", ", jpOnly));
+            var jpKeys = new HashSet<string>(jpRows.Select(r => r.Key));
+            var enOnly = enByKey.Keys.Where(k => !jpKeys.Contains(k)).Take(10).ToList();
+            if (enOnly.Count > 0)
+                throw new InvalidDataException(assetName + ": English resource contains key(s) absent from Japanese: " + string.Join(", ", enOnly));
 
             string outPath = Path.Combine(translation, TranslationFileNames[assetName]);
             TranslationFileService.Write(outPath, rows);
@@ -81,7 +81,7 @@ internal sealed class ProjectService
 
         ExportLocalizationTable();
         Console.WriteLine();
-        Console.WriteLine("Export complete. Target is initialized with the English text.");
+        Console.WriteLine("Export complete. Target is initialized with the Japanese text.");
     }
 
     public void BuildOutput()
@@ -92,7 +92,7 @@ internal sealed class ProjectService
             Directory.Delete(output, true);
         Directory.CreateDirectory(output);
 
-        var sourceAssets = UnityBundleService.ReadTextAssets(Path.Combine(originals, "asset_text_en"));
+        var sourceAssets = UnityBundleService.ReadTextAssets(Path.Combine(originals, "asset_text_jp"));
         var replacements = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
         foreach (string assetName in TextAssetNames)
@@ -111,8 +111,8 @@ internal sealed class ProjectService
             replacements[assetName] = CsvCodec.SerializeTwoColumn(finalRows);
         }
 
-        string outText = Path.Combine(output, "asset_text_en");
-        UnityBundleService.WriteTextAssets(Path.Combine(originals, "asset_text_en"), outText, replacements);
+        string outText = Path.Combine(output, "asset_text_jp");
+        UnityBundleService.WriteTextAssets(Path.Combine(originals, "asset_text_jp"), outText, replacements);
         Console.WriteLine("  Generated " + Relative(outText));
 
         BuildLocalizationTable();
@@ -134,15 +134,14 @@ internal sealed class ProjectService
         var rows = new List<TranslationRow>();
         foreach (var entry in shared)
         {
-            if (!en.TryGetValue(entry.Id, out var enValue) || enValue == null ||
-                !jp.TryGetValue(entry.Id, out var jpValue) || jpValue == null)
+            if (!en.TryGetValue(entry.Id, out var enValue) || enValue == null || !jp.TryGetValue(entry.Id, out var jpValue) || jpValue == null)
                 throw new InvalidDataException("Localization table is missing shared id " + entry.Id + " (" + entry.Key + ").");
             rows.Add(new TranslationRow
             {
                 Key = entry.Key,
                 English = enValue,
                 Japanese = jpValue,
-                Target = enValue
+                Target = jpValue
             });
         }
 
@@ -154,10 +153,10 @@ internal sealed class ProjectService
     private void BuildLocalizationTable()
     {
         string sharedPath = Path.Combine(originals, "localization-assets-shared_assets_all.bundle");
-        string enSource = Path.Combine(originals, "localization-string-tables-english(en)_assets_all.bundle");
+        string jpSource = Path.Combine(originals, "localization-string-tables-japanese(ja)_assets_all.bundle");
         string csvPath = Path.Combine(translation, "localization_system.csv");
         var shared = UnityBundleService.ReadSharedTable(sharedPath);
-        var en = UnityBundleService.ReadStringTable(enSource, "System_en");
+        var jp = UnityBundleService.ReadStringTable(jpSource, "System_ja");
         var rows = TranslationFileService.Read(csvPath);
         TranslationFileService.ValidateKeys(csvPath, rows, shared.Select(e => e.Key));
 
@@ -165,8 +164,8 @@ internal sealed class ProjectService
         ValidatePlaceholders(csvPath, rows);
 
         var replacements = rows.ToDictionary(r => idByKey[r.Key], r => r.Target);
-        string outPath = Path.Combine(output, "localization-string-tables-english(en)_assets_all.bundle");
-        UnityBundleService.WriteStringTable(enSource, outPath, "System_en", replacements);
+        string outPath = Path.Combine(output, "localization-string-tables-japanese(ja)_assets_all.bundle");
+        UnityBundleService.WriteStringTable(jpSource, outPath, "System_ja", replacements);
         Console.WriteLine("  Generated " + Relative(outPath));
     }
 
@@ -206,13 +205,7 @@ internal sealed class ProjectService
         string outputAssetsPath = Path.Combine(output, "sharedassets0.assets");
         string outputResSPath = Path.Combine(output, "sharedassets0.assets.resS");
 
-        FontService.Build(
-            sourceAssetsPath,
-            sourceResSPath,
-            fonts[0],
-            texts,
-            outputAssetsPath,
-            outputResSPath);
+        FontService.Build(sourceAssetsPath, sourceResSPath, fonts[0], texts, outputAssetsPath, outputResSPath);
 
         Console.WriteLine("  Generated " + Relative(outputAssetsPath));
         Console.WriteLine("  Generated " + Relative(outputResSPath));
@@ -222,7 +215,7 @@ internal sealed class ProjectService
     {
         foreach (var row in rows)
         {
-            var sourceTokens = ExtractProtectedTokens(row.English);
+            var sourceTokens = ExtractProtectedTokens(row.Japanese);
             var targetTokens = ExtractProtectedTokens(row.Target);
             foreach (var token in sourceTokens)
             {

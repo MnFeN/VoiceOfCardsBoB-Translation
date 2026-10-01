@@ -54,14 +54,12 @@ internal static class FontService
 
         if (!File.Exists(sourceAssetsPath))
         {
-            throw new FileNotFoundException(
-                "Original sharedassets0.assets was not found.", sourceAssetsPath);
+            throw new FileNotFoundException("Original sharedassets0.assets was not found.", sourceAssetsPath);
         }
 
         if (!File.Exists(sourceResSPath))
         {
-            throw new FileNotFoundException(
-                "Original sharedassets0.assets.resS was not found.", sourceResSPath);
+            throw new FileNotFoundException("Original sharedassets0.assets.resS was not found.", sourceResSPath);
         }
 
         if (!File.Exists(fontPath))
@@ -72,8 +70,7 @@ internal static class FontService
             Path.GetFullPath(sourceResSPath).Equals(
                 Path.GetFullPath(outputResSPath), StringComparison.OrdinalIgnoreCase))
         {
-            throw new InvalidOperationException(
-                "Font output paths must not overwrite OriginalGameFiles directly.");
+            throw new InvalidOperationException("Font output paths must not overwrite OriginalGameFiles directly.");
         }
 
         SortedSet<int> replacementCodepoints = CollectReplacementCodepoints(texts);
@@ -101,9 +98,7 @@ internal static class FontService
             EmbeddedBitmaps = false
         };
 
-        var missingFromSourceFont = replacementCodepoints
-            .Where(cp => renderFont.GetGlyph(cp) == 0)
-            .ToList();
+        var missingFromSourceFont = replacementCodepoints.Where(cp => renderFont.GetGlyph(cp) == 0).ToList();
 
         if (missingFromSourceFont.Count > 0)
         {
@@ -122,8 +117,7 @@ internal static class FontService
         {
             AssetsFile assetsFile = assetsInstance.file;
 
-            if (!string.Equals(
-                    assetsFile.Metadata.UnityVersion, "2019.4.40f1", StringComparison.Ordinal))
+            if (!string.Equals(assetsFile.Metadata.UnityVersion, "2019.4.40f1", StringComparison.Ordinal))
             {
                 throw new InvalidDataException(
                     $"Unexpected Unity version in sharedassets0.assets: " +
@@ -138,30 +132,23 @@ internal static class FontService
 
             if (!ContainsAscii(originalFontData, FontAssetName))
             {
-                throw new InvalidDataException(
-                    $"PathID {FontPathId} does not look like {FontAssetName}.");
+                throw new InvalidDataException($"PathID {FontPathId} does not look like {FontAssetName}.");
             }
 
             FontData fontData = FontData.Parse(originalFontData);
             var glyphByIndex = fontData.Glyphs.ToDictionary(g => g.Index);
-            var originalCharactersByGlyph = fontData.Characters
-                .GroupBy(c => c.GlyphIndex)
-                .ToDictionary(g => g.Key, g => g.ToList());
+            var originalCharactersByGlyph = fontData.Characters.GroupBy(c => c.GlyphIndex).ToDictionary(g => g.Key, g => g.ToList());
 
-            var requiredUnicodes = replacementCodepoints
-                .Select(cp => checked((uint)cp))
-                .ToHashSet();
+            var requiredUnicodes = replacementCodepoints.Select(cp => checked((uint)cp)).ToHashSet();
 
             CharacterRecord templateCharacter = fontData.Characters
                 .FirstOrDefault(c => c.Unicode == NewHanTemplateUnicode)
                 ?? throw new InvalidDataException(
                     "Font_CardAnalogica does not contain the template character 新 (U+65B0).");
 
-            if (!glyphByIndex.TryGetValue(
-                    templateCharacter.GlyphIndex, out var templateGlyph))
+            if (!glyphByIndex.TryGetValue(templateCharacter.GlyphIndex, out var templateGlyph))
             {
-                throw new InvalidDataException(
-                    "Font_CardAnalogica does not contain the template glyph for 新 (U+65B0).");
+                throw new InvalidDataException("Font_CardAnalogica does not contain the template glyph for 新 (U+65B0).");
             }
 
             List<GlyphRecord> recyclableGlyphs = fontData.Glyphs
@@ -201,8 +188,7 @@ internal static class FontService
                         .GetValueOrDefault(originalGlyph.Index, [])
                         .Any(other => other.Unicode != unicode && !IsRecyclableOriginalCodepoint(other.Unicode));
 
-                    bool canOverwriteOriginal =
-                        !hasProtectedAlias && claimedOriginalGlyphs.Add(originalGlyph.Index);
+                    bool canOverwriteOriginal = !hasProtectedAlias && claimedOriginalGlyphs.Add(originalGlyph.Index);
 
                     GlyphRecord targetGlyph = originalGlyph;
 
@@ -267,8 +253,7 @@ internal static class FontService
             Console.WriteLine($"  Font characters added: {added}");
             Console.WriteLine($"  Existing characters detached from shared glyphs: {detached}");
             Console.WriteLine($"  Recycled original CJK glyph slots used: {recycled}");
-            Console.WriteLine(
-                $"  Recycled original CJK glyph slots remaining: {recyclePool.Count}");
+            Console.WriteLine($"  Recycled original CJK glyph slots remaining: {recyclePool.Count}");
         }
         finally
         {
@@ -326,8 +311,7 @@ internal static class FontService
 
                 if (exactSizeOnly)
                 {
-                    if (glyph.RectWidth != template.RectWidth ||
-                        glyph.RectHeight != template.RectHeight)
+                    if (glyph.RectWidth != template.RectWidth || glyph.RectHeight != template.RectHeight)
                         continue;
 
                     return i;
@@ -358,9 +342,7 @@ internal static class FontService
 
     private static bool IsJapaneseSyllabary(int codepoint)
     {
-        return codepoint is >= 0x3040 and <= 0x30FF ||
-               codepoint is >= 0x31F0 and <= 0x31FF ||
-               codepoint is >= 0xFF65 and <= 0xFF9F;
+        return codepoint is >= 0x3040 and <= 0x30FF || codepoint is >= 0x31F0 and <= 0x31FF || codepoint is >= 0xFF65 and <= 0xFF9F;
     }
 
     private static SortedSet<int> CollectReplacementCodepoints(IEnumerable<string> texts)
@@ -429,8 +411,7 @@ internal static class FontService
         }
 
         byte[] atlas = new byte[AtlasWidth * AtlasHeight];
-        using var stream = new FileStream(
-            resSPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+        using var stream = new FileStream(resSPath, FileMode.Open, FileAccess.Read, FileShare.Read);
 
         stream.Position = AtlasResourceOffset;
         stream.ReadExactly(atlas);
@@ -441,8 +422,7 @@ internal static class FontService
     {
         File.Copy(sourceResSPath, outputResSPath, true);
 
-        using var stream = new FileStream(
-            outputResSPath, FileMode.Open, FileAccess.Write, FileShare.None);
+        using var stream = new FileStream(outputResSPath, FileMode.Open, FileAccess.Write, FileShare.None);
 
         stream.Position = AtlasResourceOffset;
         stream.Write(atlas);
@@ -452,28 +432,22 @@ internal static class FontService
     {
         if (glyph.AtlasIndex != 0)
         {
-            throw new InvalidDataException(
-                $"GlyphIndex {glyph.Index} uses unsupported atlas index {glyph.AtlasIndex}.");
+            throw new InvalidDataException($"GlyphIndex {glyph.Index} uses unsupported atlas index {glyph.AtlasIndex}.");
         }
 
         if (glyph.RectWidth <= 0 || glyph.RectHeight <= 0)
         {
-            throw new InvalidDataException(
-                $"GlyphIndex {glyph.Index} has an empty atlas rectangle.");
+            throw new InvalidDataException($"GlyphIndex {glyph.Index} has an empty atlas rectangle.");
         }
 
         if (sdf.Length != glyph.RectWidth * glyph.RectHeight)
         {
-            throw new ArgumentException(
-                "SDF dimensions do not match the glyph rectangle.", nameof(sdf));
+            throw new ArgumentException("SDF dimensions do not match the glyph rectangle.", nameof(sdf));
         }
 
-        if (glyph.RectX < 0 || glyph.RectY < 0 ||
-            glyph.RectX + glyph.RectWidth > AtlasWidth ||
-            glyph.RectY + glyph.RectHeight > AtlasHeight)
+        if (glyph.RectX < 0 || glyph.RectY < 0 || glyph.RectX + glyph.RectWidth > AtlasWidth || glyph.RectY + glyph.RectHeight > AtlasHeight)
         {
-            throw new InvalidDataException(
-                $"GlyphIndex {glyph.Index} has an atlas rectangle outside the 4096x4096 texture.");
+            throw new InvalidDataException($"GlyphIndex {glyph.Index} has an atlas rectangle outside the 4096x4096 texture.");
         }
 
         // SDF is top-down. Unity's raw Alpha8 texture rows are addressed bottom-up relative to
@@ -484,8 +458,7 @@ internal static class FontService
             int sourceOffset = sourceRow * glyph.RectWidth;
             int destinationOffset = (glyph.RectY + row) * AtlasWidth + glyph.RectX;
 
-            Buffer.BlockCopy(
-                sdf, sourceOffset, atlas, destinationOffset, glyph.RectWidth);
+            Buffer.BlockCopy(sdf, sourceOffset, atlas, destinationOffset, glyph.RectWidth);
         }
     }
 
@@ -498,20 +471,14 @@ internal static class FontService
 
         if (glyphId == 0)
         {
-            throw new InvalidDataException(
-                "Source font has no glyph for " + FormatCodepoint(codepoint));
+            throw new InvalidDataException("Source font has no glyph for " + FormatCodepoint(codepoint));
         }
 
         int highWidth = checked(width * SdfScale);
         int highHeight = checked(height * SdfScale);
         string text = new Rune(codepoint).ToString();
 
-        using var bitmap = new SKBitmap(
-            new SKImageInfo(
-                highWidth,
-                highHeight,
-                SKColorType.Bgra8888,
-                SKAlphaType.Premul));
+        using var bitmap = new SKBitmap(new SKImageInfo(highWidth, highHeight, SKColorType.Bgra8888, SKAlphaType.Premul));
 
         using var canvas = new SKCanvas(bitmap);
         using var paint = new SKPaint
@@ -527,20 +494,13 @@ internal static class FontService
 
         if (bounds.Width <= 0 || bounds.Height <= 0)
         {
-            throw new InvalidDataException(
-                "Source font returned invalid bounds for " + FormatCodepoint(codepoint));
+            throw new InvalidDataException("Source font returned invalid bounds for " + FormatCodepoint(codepoint));
         }
 
         float x = (highWidth - bounds.Width) * 0.5f - bounds.Left;
         float y = (highHeight - bounds.Height) * 0.5f - bounds.Top;
 
-        canvas.DrawText(
-            text,
-            x,
-            y,
-            SKTextAlign.Left,
-            font,
-            paint);
+        canvas.DrawText(text, x, y, SKTextAlign.Left, font, paint);
 
         canvas.Flush();
 
@@ -583,15 +543,12 @@ internal static class FontService
 
         if (!anyOutside)
         {
-            throw new InvalidDataException(
-                $"Rasterized glyph filled the entire bitmap for {FormatCodepoint(codepoint)}.");
+            throw new InvalidDataException($"Rasterized glyph filled the entire bitmap for {FormatCodepoint(codepoint)}.");
         }
 
-        double[] distanceToOutside = DistanceToFeature(
-            mask, highWidth, highHeight, featureInside: false);
+        double[] distanceToOutside = DistanceToFeature(mask, highWidth, highHeight, featureInside: false);
 
-        double[] distanceToInside = DistanceToFeature(
-            mask, highWidth, highHeight, featureInside: true);
+        double[] distanceToInside = DistanceToFeature(mask, highWidth, highHeight, featureInside: true);
 
         double scale = 127.0 / (SdfSpread * SdfScale);
         double[] highSdf = new double[mask.Length];
@@ -601,16 +558,9 @@ internal static class FontService
             bool inside = mask[i] >= 128;
             double insideDistance = inside ? distanceToOutside[i] : 0.0;
             double outsideDistance = inside ? 0.0 : distanceToInside[i];
-            double signedDistance =
-                insideDistance -
-                outsideDistance +
-                mask[i] / 255.0 -
-                0.5;
+            double signedDistance = insideDistance - outsideDistance + mask[i] / 255.0 - 0.5;
 
-            highSdf[i] = Math.Clamp(
-                128.0 + signedDistance * scale,
-                0.0,
-                255.0);
+            highSdf[i] = Math.Clamp(128.0 + signedDistance * scale, 0.0, 255.0);
         }
 
         byte[] result = new byte[width * height];
@@ -639,8 +589,7 @@ internal static class FontService
         return result;
     }
 
-    private static double[] DistanceToFeature(
-        byte[] mask, int width, int height, bool featureInside)
+    private static double[] DistanceToFeature(byte[] mask, int width, int height, bool featureInside)
     {
         int length = checked(width * height);
         double[] temp = new double[length];
@@ -747,8 +696,7 @@ internal static class FontService
         {
             if (data.Length < GlyphTableOffset + 4)
             {
-                throw new InvalidDataException(
-                    "Font_CardAnalogica object is unexpectedly small.");
+                throw new InvalidDataException("Font_CardAnalogica object is unexpectedly small.");
             }
 
             uint glyphCount = ReadUInt32(data, GlyphCountOffset);
@@ -760,8 +708,7 @@ internal static class FontService
             int characterCountOffset = checked((int)characterCountOffsetLong);
             uint characterCount = ReadUInt32(data, characterCountOffset);
             long characterTableOffsetLong = characterCountOffsetLong + 4;
-            long suffixOffsetLong = characterTableOffsetLong +
-                (long)characterCount * CharacterRecordSize;
+            long suffixOffsetLong = characterTableOffsetLong + (long)characterCount * CharacterRecordSize;
 
             if (suffixOffsetLong < 0 || suffixOffsetLong > data.Length)
                 throw new InvalidDataException("Invalid TMP character table length.");
@@ -772,26 +719,22 @@ internal static class FontService
 
             for (int i = 0; i < glyphCount; i++)
             {
-                glyphs.Add(GlyphRecord.Read(
-                    data, GlyphTableOffset + i * GlyphRecordSize));
+                glyphs.Add(GlyphRecord.Read(data, GlyphTableOffset + i * GlyphRecordSize));
             }
 
             var characters = new List<CharacterRecord>(checked((int)characterCount));
 
             for (int i = 0; i < characterCount; i++)
             {
-                characters.Add(CharacterRecord.Read(
-                    data, characterTableOffset + i * CharacterRecordSize));
+                characters.Add(CharacterRecord.Read(data, characterTableOffset + i * CharacterRecordSize));
             }
 
             if (glyphs.Select(g => g.Index).Distinct().Count() != glyphs.Count)
-                throw new InvalidDataException(
-                    "Font_CardAnalogica contains duplicate glyph indexes.");
+                throw new InvalidDataException("Font_CardAnalogica contains duplicate glyph indexes.");
 
             if (characters.Select(c => c.Unicode).Distinct().Count() != characters.Count)
             {
-                throw new InvalidDataException(
-                    "Font_CardAnalogica contains duplicate Unicode character records.");
+                throw new InvalidDataException("Font_CardAnalogica contains duplicate Unicode character records.");
             }
 
             return new FontData
@@ -935,4 +878,5 @@ internal static class FontService
         return BitConverter.Int32BitsToSingle(bits);
     }
 }
+
 

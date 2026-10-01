@@ -7,8 +7,7 @@ internal static class UnityBundleService
 {
     public static Dictionary<string, string> ReadTextAssets(string bundlePath)
     {
-        var result = new Dictionary<string, string>(
-            StringComparer.OrdinalIgnoreCase);
+        var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
         var manager = new AssetsManager();
         var bundle = manager.LoadBundleFile(bundlePath, true);
@@ -37,23 +36,18 @@ internal static class UnityBundleService
         return result;
     }
 
-    public static void WriteTextAssets(
-        string sourceBundlePath,
-        string outputBundlePath,
-        IDictionary<string, string> replacements)
+    public static void WriteTextAssets(string sourceBundlePath, string outputBundlePath, IDictionary<string, string> replacements)
     {
         var manager = new AssetsManager();
         var bundle = manager.LoadBundleFile(sourceBundlePath, true);
 
         try
         {
-            var assetsInstance =
-                manager.LoadAssetsFileFromBundle(bundle, 0, false);
+            var assetsInstance = manager.LoadAssetsFileFromBundle(bundle, 0, false);
 
             var assetsFile = assetsInstance.file;
 
-            var foundNames = new HashSet<string>(
-                StringComparer.OrdinalIgnoreCase);
+            var foundNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
             foreach (var info in assetsFile.GetAssetsOfType(AssetClassID.TextAsset))
             {
@@ -70,15 +64,11 @@ internal static class UnityBundleService
                 info.SetNewData(baseField);
             }
 
-            var missing = replacements.Keys
-                .Where(key => !foundNames.Contains(key))
-                .ToList();
+            var missing = replacements.Keys.Where(key => !foundNames.Contains(key)).ToList();
 
             if (missing.Count > 0)
             {
-                throw new InvalidDataException(
-                    "TextAsset(s) not found in source bundle: " +
-                    string.Join(", ", missing));
+                throw new InvalidDataException("TextAsset(s) not found in source bundle: " + string.Join(", ", missing));
             }
 
             ReplaceAssetsFileInBundle(bundle, assetsFile);
@@ -182,22 +172,17 @@ internal static class UnityBundleService
 
         try
         {
-            var assetsInstance =
-                manager.LoadAssetsFileFromBundle(bundle, 0, false);
+            var assetsInstance = manager.LoadAssetsFileFromBundle(bundle, 0, false);
 
             var assetsFile = assetsInstance.file;
 
             var foundTable = false;
 
-            foreach (var info in assetsFile
-                         .GetAssetsOfType(AssetClassID.MonoBehaviour))
+            foreach (var info in assetsFile.GetAssetsOfType(AssetClassID.MonoBehaviour))
             {
                 var baseField = manager.GetBaseField(assetsInstance, info);
 
-                if (!string.Equals(
-                        baseField["m_Name"].AsString,
-                        tableName,
-                        StringComparison.Ordinal))
+                if (!string.Equals(baseField["m_Name"].AsString, tableName, StringComparison.Ordinal))
                 {
                     continue;
                 }
@@ -213,22 +198,19 @@ internal static class UnityBundleService
 
                     if (!replacements.TryGetValue(id, out var value))
                     {
-                        throw new InvalidDataException(
-                            $"Missing localization entry id {id} in translation CSV.");
+                        throw new InvalidDataException($"Missing localization entry id {id} in translation CSV.");
                     }
 
                     entry["m_Localized"].AsString = value;
                     seenIds.Add(id);
                 }
 
-                var extraIds = replacements.Keys
-                    .Where(id => !seenIds.Contains(id))
-                    .ToList();
+                var extraIds = replacements.Keys.Where(id => !seenIds.Contains(id)).ToList();
 
                 if (extraIds.Count > 0)
                 {
                     throw new InvalidDataException(
-                        "Translation CSV contains localization ids not present in the English table: " +
+                        "Translation CSV contains localization ids not present in the target table: " +
                         string.Join(", ", extraIds));
                 }
 
@@ -239,8 +221,7 @@ internal static class UnityBundleService
 
             if (!foundTable)
             {
-                throw new InvalidDataException(
-                    $"Could not find string table '{tableName}' in {sourceBundlePath}");
+                throw new InvalidDataException($"Could not find string table '{tableName}' in {sourceBundlePath}");
             }
 
             ReplaceAssetsFileInBundle(bundle, assetsFile);
@@ -257,24 +238,20 @@ internal static class UnityBundleService
     /// 将修改后的 AssetsFile 设置回 UnityFS bundle 的第一个文件条目。
     /// 本游戏当前分析到的相关 bundle 中，第 0 个条目就是需要修改的 serialized AssetsFile。
     /// </summary>
-    private static void ReplaceAssetsFileInBundle(
-        BundleFileInstance bundle,
-        AssetsFile assetsFile)
+    private static void ReplaceAssetsFileInBundle(BundleFileInstance bundle, AssetsFile assetsFile)
     {
         var directoryInfos = bundle.file.BlockAndDirInfo.DirectoryInfos;
 
         if (directoryInfos.Count == 0)
         {
-            throw new InvalidDataException(
-                "Bundle contains no directory entries.");
+            throw new InvalidDataException("Bundle contains no directory entries.");
         }
 
         var directoryInfo = directoryInfos[0];
 
         if (!directoryInfo.IsSerialized)
         {
-            throw new InvalidDataException(
-                $"First bundle entry '{directoryInfo.Name}' is not a serialized AssetsFile.");
+            throw new InvalidDataException($"First bundle entry '{directoryInfo.Name}' is not a serialized AssetsFile.");
         }
 
         directoryInfo.SetNewData(assetsFile);
@@ -286,8 +263,7 @@ internal static class UnityBundleService
     /// </summary>
     private static void WriteBundle(BundleFileInstance bundle, string outputBundlePath)
     {
-        var directory =
-            Path.GetDirectoryName(outputBundlePath);
+        var directory = Path.GetDirectoryName(outputBundlePath);
 
         if (!string.IsNullOrEmpty(directory))
         {
