@@ -1,0 +1,1181 @@
+﻿"Key","English","Japanese","Target"
+"MstVersion","1.0.15","1.0.15","1.0.15
+1.0.15"
+"BuffDefUpText","■■■ Scheduled to be deleted ■■■ Defense <br> <% 1>% up!","■■■削除予定■■■防御が<br><%1>%アップ！","■■■预定删除■■■防御<br>提升 <%1>%！
+■■■ Scheduled to be deleted ■■■ Defense <br> <% 1>% up!"
+"BuffAtkUpText","■■■ Scheduled to be deleted ■■■ Attack <br> <% 1>% up!","■■■削除予定■■■攻撃が<br><%1>%アップ！","■■■预定删除■■■攻击<br>提升 <%1>%！
+■■■ Scheduled to be deleted ■■■ Attack <br> <% 1>% up!"
+"SpeedDownAnnounce","■■■ Scheduled to be deleted ■■■ Speed ​​has been reduced!","■■■削除予定■■■速度が<br>下がった！","■■■预定删除■■■速度<br>降低了！
+■■■ Scheduled to be deleted ■■■ Speed ​​has been reduced!"
+"StatusHeadSymbol","■■■ Scheduled to be deleted ■■■ ★","■■■削除予定■■■★","■■■预定删除■■■★
+■■■ Scheduled to be deleted ■■■ ★"
+"BadStatePosonText","■■■ Will be removed ■■■ Poison damage","■■■削除予定■■■毒ダメージ","■■■预定删除■■■中毒伤害
+■■■ Will be removed ■■■ Poison damage"
+"BadStateParalysisText","■■■ Will be removed ■■■ Paralyzed","■■■削除予定■■■痺れて行動不可","■■■预定删除■■■麻痹，无法行动
+■■■ Will be removed ■■■ Paralyzed"
+"NextQuest1","■■■ To be deleted ■■■ Purpose","■■■削除予定■■■サイショの目的","■■■预定删除■■■目标
+■■■ To be deleted ■■■ Purpose"
+"BattleWin","■■■ Will be deleted ■■■ You have won the battle!","■■■削除予定■■■戦闘に勝利した！","■■■预定删除■■■战斗胜利！
+■■■ Will be deleted ■■■ You have won the battle!"
+"Get","■ Got to be deleted!","■■■削除予定■■■を得た！","■■■预定删除■■■获得！
+■ Got to be deleted!"
+"SkillChange","Skill change","■■■削除予定■■■スキル変更","技能变更
+Skill change"
+"EquipmentChange","Equipment change","■■■削除予定■■■装備変更","装备变更
+Equipment change"
+"DebugButtonBase","Debug","デバック","调试
+Debug"
+"DebugButtonReset","RESET","RESET","重置
+RESET"
+"DebugButtonNight","Day and night","昼夜経過","昼夜切换
+Day and night"
+"DebugButtonEscape","ESCAPE","ESCAPE","逃脱
+ESCAPE"
+"DebugButtonSkip","SKIP","SKIP","跳过
+SKIP"
+"DebugButtonFLICK","Hook reversal","ﾌﾘｯｸ反転","滑动反转
+Hook reversal"
+"DebugButtonPAD","Pseudocon","疑似コン","模拟手柄
+Pseudocon"
+"DebugButtonBgm","BGM change","BGM変更","BGM 切换
+BGM change"
+"DebugButtonCameraB","Tracking camera","追跡ｶﾒﾗ","跟踪镜头
+Tracking camera"
+"DebugButtonTop","TOP","TOP","TOP
+TOP"
+"DebugButtonHp","recovery","回復","恢复
+recovery"
+"DebugButtonBaSt","Battle A","戦闘開始A","战斗开始 A
+Battle A"
+"VoiceofCards","Voice of Cards: The Beasts of Burden","Voice of Cards: 囚われの魔物","Voice of Cards：被囚的魔物
+Voice of Cards: The Beasts of Burden"
+"MoveImpossible","Cannot move to that location","その場所には移動できません","无法移动到那里
+Cannot move to that location"
+"OpenImpossible","The prone card that is not adjacent to the piece does not turn over","駒に隣接していない伏せカードはめくれません","无法翻开与棋子不相邻的暗牌
+The prone card that is not adjacent to the piece does not turn over"
+"UpperLimitItem","Looks like you're over
+your item limit. You'll
+need to use or discard
+{1}.
+({2}/{3} in possession)","アイテムが所持限界数を超えています。{1}個使用するか捨てるかして数を減らしてください。<br>（所持数 {2}／{3}個）","道具已超过持有上限。请使用或丢弃 {1} 个。<br>（持有数 {2}/{3}）
+Looks like you're over
+your item limit. You'll
+need to use or discard
+{1}.
+({2}/{3} in possession)"
+"UpperLimitEquip","Looks like you're over
+your equipment limit.
+Sorry, but you'll need
+to discard {1}. 
+({2}/{3} in possession)","装備が所持限界数を超えています。{1}個捨てて数を減らしてください。<br>（所持数 {2}／{3}個）","装备已超过持有上限。请丢弃 {1} 个。<br>（持有数 {2}/{3}）
+Looks like you're over
+your equipment limit.
+Sorry, but you'll need
+to discard {1}. 
+({2}/{3} in possession)"
+"RemainingSteps","Remaining
+Moves","残り歩数","剩余步数
+Remaining
+Moves"
+"Impossible","Restricted
+Actions","禁止","禁止操作
+Restricted
+Actions"
+"Jump","Jump","ジャンプ","跳跃
+Jump"
+"EscapeItemUse","Ring
+Bellwether","導きの鈴使用","使用引路铃
+Ring
+Bellwether"
+"CameraLimit","Camera
+Fixed","カメラ制限あり","镜头固定
+Camera
+Fixed"
+"Status","status","ステータス","状态
+status"
+"BadStatus","No Ailments","状態異常なし","无异常状态
+No Ailments"
+"BuffStatus","No Buffs","強化効果なし","无强化效果
+No Buffs"
+"None","None","なし","无
+None"
+"GameOver","Game Over","GameOver","游戏结束
+Game Over"
+"BattleResult","Results","バトル結果","战斗结果
+Results"
+"Exp","EXP","経験値","经验值
+EXP"
+"ExpStatus","EXP","EXP","EXP
+EXP"
+"Gold","Gold","ゴールド","金币
+Gold"
+"LevelUp","Level Up","レベルアップ","升级
+Level Up"
+"CharacterLevelUp","{0} 
+leveled up!","{0}の<br>レベルが<br>上がりました！","{0}<br>升级了！
+{0} 
+leveled up!"
+"SkillGet","Skill Acquired","習得","习得技能
+Skill Acquired"
+"SkillAcquire","Learned {0}!","新たなスキル<br>「{0}」を<br>習得しました！","习得新技能<br>“{0}”！
+Learned {0}!"
+"PassiveSkillAcquire","Acquired {0}!","新たな特性<br>「{0}」を<br>習得しました！","习得新特性<br>“{0}”！
+Acquired {0}!"
+"ItemFound","Treasure discovered!","アイテムを<br>発見しました！","发现<br>道具！
+Treasure discovered!"
+"PleaseSelect","Please Pick One","選択してください","请选择
+Please Pick One"
+"GetCollectUpper","<size=4.1>You got a higher-ranked card! Discarding lower-ranked card in your possession.","<size=5.2>高いランクのカードを入手しました！<br>現在所持している低いランクのカードを破棄します。</size>","<size=4.1>获得了更高等级的卡牌！<br>将丢弃当前持有的低等级卡牌。</size>
+<size=4.1>You got a higher-ranked card! Discarding lower-ranked card in your possession."
+"GetCollectSame","<size=4.1>You already possess a card of the same rank, so the new card will be discarded.","<size=5.2>同じランクのカードをすでに所持しているため、入手したカードを破棄します。</size>","<size=4.1>已持有同等级卡牌，<br>新获得的卡牌将被丢弃。</size>
+<size=4.1>You already possess a card of the same rank, so the new card will be discarded."
+"GetCollectLower","<size=4.1>You already possess a higher-ranked card, so the new card will be discarded.","<size=5.2>高いランクのカードをすでに所持しているため、入手したカードを破棄します。</size>","<size=4.1>已持有更高等级卡牌，<br>新获得的卡牌将被丢弃。</size>
+<size=4.1>You already possess a higher-ranked card, so the new card will be discarded."
+"Miss","miss","miss","未命中
+miss"
+"MapName1","Desert","砂漠","沙漠
+Desert"
+"MapName3","Subterranean Village","地下の村","地下村落
+Subterranean Village"
+"MapName4","Subterranean Cave B5","地下洞窟／地下５階","地下洞窟·地下 5 层
+Subterranean Cave B5"
+"MapName5","Subterranean Cave B4","地下洞窟／地下４階","地下洞窟·地下 4 层
+Subterranean Cave B4"
+"MapName6","Subterranean Cave B3","地下洞窟／地下３階","地下洞窟·地下 3 层
+Subterranean Cave B3"
+"MapName7","Subterranean Cave B2","地下洞窟／地下２階","地下洞窟·地下 2 层
+Subterranean Cave B2"
+"MapName9","Subterranean Cave B1","地下洞窟／地下１階","地下洞窟·地下 1 层
+Subterranean Cave B1"
+"MapName10","Steelborough","鋼の街","钢铁城
+Steelborough"
+"MapName11","Mine 1F","鉱山／１階","矿山·1 层
+Mine 1F"
+"MapName12","Mine B1","鉱山／地下１階","矿山·地下 1 层
+Mine B1"
+"MapName13","Mine B2","鉱山／地下２階","矿山·地下 2 层
+Mine B2"
+"MapName14","Desert Circus","砂漠のサーカス","沙漠马戏团
+Desert Circus"
+"MapName15","Roving Market","移動商店","流动商店
+Roving Market"
+"MapName16","Sand Ruins 1F","砂の遺跡／１階","沙之遗迹·1 层
+Sand Ruins 1F"
+"MapName17","Sand Ruins B1","砂の遺跡／地下１階","沙之遗迹·地下 1 层
+Sand Ruins B1"
+"MapName19","Sand Ruins B2","砂の遺跡／地下２階","沙之遗迹·地下 2 层
+Sand Ruins B2"
+"MapName20","Wasteland","荒れ地","荒地
+Wasteland"
+"MapName21","City of Flame","炎の街","炎之城
+City of Flame"
+"MapName22","Lake of Fire","火の湖","火之湖
+Lake of Fire"
+"MapName23","Village of Light","光の村","光之村
+Village of Light"
+"MapName24","Ruined Edifice 1F","宗教遺跡／１階","宗教遗迹·1 层
+Ruined Edifice 1F"
+"MapName25","Ruined Edifice 2F","宗教遺跡／２階","宗教遗迹·2 层
+Ruined Edifice 2F"
+"MapName26","Ruined Edifice 3F","宗教遺跡／３階","宗教遗迹·3 层
+Ruined Edifice 3F"
+"MapName27","Ruined Edifice 4F","宗教遺跡／４階","宗教遗迹·4 层
+Ruined Edifice 4F"
+"MapName30","Snowfield","雪原","雪原
+Snowfield"
+"MapName31","Icevale","氷の村","冰之村
+Icevale"
+"MapName32","Endwall — Approach","果ての崖／入口","尽头之崖·入口
+Endwall — Approach"
+"MapName33","Endwall 44F","果ての崖／地上４４階","尽头之崖·地上 44 层
+Endwall 44F"
+"MapName34","Endwall 45F","果ての崖／地上４５階","尽头之崖·地上 45 层
+Endwall 45F"
+"MapName35","Endwall — Midpoint","果ての崖／外壁・中層","尽头之崖·外壁中层
+Endwall — Midpoint"
+"MapName36","Endwall 72F","果ての崖／地上７２階","尽头之崖·地上 72 层
+Endwall 72F"
+"MapName37","Endwall — Upper Reaches","果ての崖／外壁・上層","尽头之崖·外壁上层
+Endwall — Upper Reaches"
+"MapName38","Endwall 99F","果ての崖／地上９９階","尽头之崖·地上 99 层
+Endwall 99F"
+"MapName39","Endwall — Top","果ての崖／最上階","尽头之崖·顶层
+Endwall — Top"
+"MapName50","Newterra","新天地","新天地
+Newterra"
+"MapName51","Silent Village","静かな村","寂静村落
+Silent Village"
+"MapName52","Monster Town","魔物の集落","魔物聚落
+Monster Town"
+"MapName53","Underground Passage","地下通路","地下通道
+Underground Passage"
+"MapName54","Subsurface Ruins B2","謎の地下遺跡／地下２階","神秘地下遗迹·地下 2 层
+Subsurface Ruins B2"
+"MapName55","Subsurface Ruins B3","謎の地下遺跡／地下３階","神秘地下遗迹·地下 3 层
+Subsurface Ruins B3"
+"MapName56","Subsurface Ruins B4","謎の地下遺跡／地下４階","神秘地下遗迹·地下 4 层
+Subsurface Ruins B4"
+"MapName57","Subsurface Ruins B5","謎の地下遺跡／地下５階","神秘地下遗迹·地下 5 层
+Subsurface Ruins B5"
+"MapName58","Subsurf. Ruins: Urbania","謎の地下遺跡／都市空間","神秘地下遗迹·都市空间
+Subsurf. Ruins: Urbania"
+"MapName59","Deciding Grounds","決戦の地","决战之地
+Deciding Grounds"
+"MapName60","Subsurf. Ruins: Cinema","謎の地下遺跡／映画館","神秘地下遗迹·电影院
+Subsurf. Ruins: Cinema"
+"MapName70","Village Memory","とある村の記録","某个村庄的记录
+Village Memory"
+"MapName201","Steel Hall","鋼の街／鋼の議事堂","钢铁城·钢铁议事堂
+Steel Hall"
+"MapName203","Shrine of Light","光の村／光の社","光之村·光之祠
+Shrine of Light"
+"MapName300","The Depths","地下の深層","地下深层
+The Depths"
+"MapName1015","Roving Market","移動商店","流动商店
+Roving Market"
+"MapName1023","Village of Light","光の村","光之村
+Village of Light"
+"MapName1032","Endwall — Approach","果ての崖／入口","尽头之崖·入口
+Endwall — Approach"
+"MapName1035","Endwall — Midpoint","果ての崖／外壁・中層","尽头之崖·外壁中层
+Endwall — Midpoint"
+"MapName1037","Endwall — Upper Reaches","果ての崖／外壁・上層","尽头之崖·外壁上层
+Endwall — Upper Reaches"
+"MapName9998","World Map","フィールド","世界地图
+World Map"
+"MapName9999","World Map","フィールド","世界地图
+World Map"
+"Formation","Set Up","編成","编成
+Set Up"
+"Skill","Skills","スキル","技能
+Skills"
+"Specific","Abilities","特性","特性
+Abilities"
+"Equipment","Equipment","装備","装备
+Equipment"
+"Party","Party","パーティ","队伍
+Party"
+"PlayerCard","Owned Cards","所持カード","持有卡牌
+Owned Cards"
+"Item","Items","アイテム","道具
+Items"
+"Important","Key Items","大事なもの","重要物品
+Key Items"
+"Collection","Collection","コレクション","收藏
+Collection"
+"Character","Characters","キャラクター","角色
+Characters"
+"Monster","Monsters","エネミー","魔物
+Monsters"
+"Ending","Ending","エンディング","结局
+Ending"
+"DataTop","Data","データ","数据
+Data"
+"Save","Save ","セーブ","保存
+Save "
+"SaveTitle","Save","セーブ","保存
+Save"
+"Load","Load","ロード","读取
+Load"
+"Movie","Movies","ムービー","影片
+Movies"
+"GoEquipment","Equipment","装備画面へ","装备
+Equipment"
+"ChangeMainParty","Switch to Main Party","メインパーティに切替","切换至主队
+Switch to Main Party"
+"ChangeSubParty","Switch to Reserve","控えキャラクターに切替","切换至后备成员
+Switch to Reserve"
+"SkillSpecific","Skills","スキル・特性","技能·特性
+Skills"
+"CurrentGold","Purse","所持金","持有金币
+Purse"
+"Page","page","ページ","页
+page"
+"CurrentEquipment","Current Gear","装備中","当前装备
+Current Gear"
+"FixedEquipment","Permanent","変更不可","不可更换
+Permanent"
+"EquipableItems","Equipment","所持装備品","持有装备
+Equipment"
+"CurrentParty","Main Party","メインパーティ","主队
+Main Party"
+"ChangeParty","In Reserve","控えキャラクター","后备成员
+In Reserve"
+"CollectedCards","Cards","集めたカード","已收集卡牌
+Cards"
+"CurrentSkills","Current Skills","セットスキル","已设置技能
+Current Skills"
+"EquipableSkills","Skills","所持スキル","持有技能
+Skills"
+"AutoSave","Autosave","オートセーブ","自动保存
+Autosave"
+"Yes","Yes","はい","是
+Yes"
+"No","No","いいえ","否
+No"
+"Use","Use","使う","使用
+Use"
+"Inspect","Inspect","調べる","调查
+Inspect"
+"Throw","Discard","捨てる","丢弃
+Discard"
+"DontThrow","Keep","捨てない","保留
+Keep"
+"CantThrow","This card cannot be discarded.","このカードは捨てることができません。","这张卡牌无法丢弃。
+This card cannot be discarded."
+"ConsumeQuestion","On whom will you use it?","誰に使用しますか？","要对谁使用？
+On whom will you use it?"
+"ConsumeAllQuestion","This will affect the entire party. Use the item?","パーティ全員に効果があります。使用しますか？","将对全队生效。确定使用？
+This will affect the entire party. Use the item?"
+"ThrowQuestion","Are you sure you want to discard this?","このアイテムを本当に捨てますか？","确定要丢弃吗？
+Are you sure you want to discard this?"
+"EscapeQuestion","Flee the dungeon?","ダンジョンから脱出しますか？","要离开迷宫吗？
+Flee the dungeon?"
+"LoadThisData","Load data?
+Do not close the game while loading.","このデータをロードしますか？
+
+ロード中は、ゲームを終了したり、本体の電源を切らないでください。","要读取这份数据吗？
+读取过程中请勿退出游戏。
+Load data?
+Do not close the game while loading."
+"SaveThisData","Overwrite data?
+Do not close the game while saving.","このデータに上書きしますか？
+
+セーブ中は、ゲームを終了したり、本体の電源を切らないでください。","要覆盖这份数据吗？
+保存过程中请勿退出游戏。
+Overwrite data?
+Do not close the game while saving."
+"CollectionBackNotOpen","This story is locked.","カードストーリー裏面は<br>まだ解放されていません。","卡牌故事背面<br>尚未解锁。
+This story is locked."
+"SaveNewData","Save?
+Do not close the game while saving.","ここにセーブしますか？
+
+セーブ中は、ゲームを終了したり、本体の電源を切らないでください。","要保存在这里吗？
+保存过程中请勿退出游戏。
+Save?
+Do not close the game while saving."
+"EquipmentNoCharacter","No current party members can equip this.","装備できるキャラクターがいません。","当前队伍中无人可以装备。
+No current party members can equip this."
+"NoChangeMember","You have no party members in reserve.","控えキャラクターが<br>いません。","没有<br>后备成员。
+You have no party members in reserve."
+"NoChangeSkill","You have no skills available to set up.","セットできるスキルが<br>ありません。","没有可设置的<br>技能。
+You have no skills available to set up."
+"SkillSnatchQuestion","Move {0}'s {1} to {2}?","{0}が<br>セットしている<br>{1}を<br>{2}に<br>セットしますか？","要把 {0} 装备的<br>{1}<br>改由 {2} 装备吗？
+Move {0}'s {1} to {2}?"
+"NoChangeEquipment","You don't have
+any cards.","何も持っていません。","什么卡牌都没有。
+You don't have
+any cards."
+"StatusLevel","LV","ＬＶ","LV
+LV"
+"StatusHP","HP","ＨＰ","HP
+HP"
+"StatusCondition","Status","状態","状态
+Status"
+"StatusAttack","ATK","攻撃","攻击
+ATK"
+"StatusDefense","DEF","防御","防御
+DEF"
+"StatusSpeed","SPD","速さ","速度
+SPD"
+"StatusNextLevelExp","Next LV","NEXT","下一级
+Next LV"
+"GameSetting","Game Settings","ゲーム設定","游戏设置
+Game Settings"
+"ComponentSetting","Customize","コンポーネント","自定义
+Customize"
+"LanguageSetting","Language","言語設定","语言
+Language"
+"SoundSetting","Sound","サウンド","声音
+Sound"
+"OtherSetting","Other","その他","其他
+Other"
+"TextSetting","Text","テキスト設定","文本
+Text"
+"ShadowSetting","Shadows","影の設定","阴影
+Shadows"
+"OperateSetting","Set Confirm","決定ボタン設定","确认键设置
+Set Confirm"
+"CursorkeysSetting","Set Direction","方向キー設定","方向键设置
+Set Direction"
+"ScreenSizeSetting","Screen Size","解像度","分辨率
+Screen Size"
+"FullScreenSetting_old","Full Screen","フルスクリーン","全屏
+Full Screen"
+"FullScreenSetting","Full Screen","フルスクリーン","全屏
+Full Screen"
+"PlayerPawnSetting","Avatar","コマ","棋子
+Avatar"
+"CardFrontSSetting","Card Face","カード表面","卡牌正面
+Card Face"
+"CardBackSetting","Card Back","カード裏面","卡牌背面
+Card Back"
+"TableSetting","Table","テーブル","桌面
+Table"
+"TraySetting","Battle Board","バトルボード","战斗面板
+Battle Board"
+"DiceSetting","Dice","ダイス","骰子
+Dice"
+"TextLanguage","Text Language","テキスト言語","文本语言
+Text Language"
+"VoiceLanguage","Voice Language","ボイス言語","语音语言
+Voice Language"
+"SoundBGMSetting","BGM","BGM音量","BGM 音量
+BGM"
+"SoundSESetting","Sound Effects","SE音量","音效音量
+Sound Effects"
+"SoundVoice","Voices","ボイス音量","语音音量
+Voices"
+"VoiceTelopSetting","Subtitles","ボイス字幕","语音字幕
+Subtitles"
+"BGMSetting","BGM","BGM","BGM
+BGM"
+"ViewCredit","Credits","クレジット","制作人员
+Credits"
+"ViewLicense","License","ライセンス","许可证
+License"
+"DataInitialization","Reset Data","データ初期化","初始化数据
+Reset Data"
+"BackToTitleUp","Title Screen","タイトルに戻る","返回标题画面
+Title Screen"
+"ExitGameUp","Quit Game","ゲームを終了する","退出游戏
+Quit Game"
+"QuestionTitle","???","???","???
+???"
+"GameSettingHighlight","Emphasize important text in red, or underline it?","テキストカードの重要な言葉の表示方法を、<b><color=#770000>赤文字</color></b>か<b><u>下線</u></b>のどちらかに変更できます。","可将文本卡中的重要词语设为<b><color=#770000>红字</color></b>或<b><u>下划线</u></b>显示。
+Emphasize important text in red, or underline it?"
+"GameSettingShadow","Turning some shadows off can help improve performance.","ゲーム内の影表示を<br>一部オフにすることで<br>ゲームの動作が<br>少し軽くなります。","关闭部分阴影可<br>稍微提升运行性能。
+Turning some shadows off can help improve performance."
+"GameSettingOperate","Select Confirm and Cancel controls.","決定とキャンセルの機能を入れ替えることができます。","可交换确认与取消键。
+Select Confirm and Cancel controls."
+"GameCursorkeysSetting","Set the directional keys.","キーボードの方向キーの設定を変更できます。","可更改键盘方向键设置。
+Set the directional keys."
+"GameSettingFullScreen_old","Turn on Full Screen?","ゲームをフルスクリーンで表示します。","以全屏模式显示游戏。
+Turn on Full Screen?"
+"GameSettingFullScreen","Turn on Full Screen?","ゲームをフルスクリーンで表示します。","以全屏模式显示游戏。
+Turn on Full Screen?"
+"GameSettingScreenSize","Select screen resolution.","画面の解像度を変更できます。","可更改画面分辨率。
+Select screen resolution."
+"ComponentSettingPlayerPawn","Select your avatar design.","プレイヤーコマを変更できます。","可更换玩家棋子。
+Select your avatar design."
+"ComponentSettingFrontImage","Select card face appearance.","カード表面のデザインを変更できます。","可更换卡牌正面样式。
+Select card face appearance."
+"ComponentsettingBackImage","Select card back appearance.","カード裏面のデザインを変更できます。","可更换卡牌背面样式。
+Select card back appearance."
+"ComponentSettingTray","Select battle board appearance.","バトルボードを変更できます。","可更换战斗面板。
+Select battle board appearance."
+"ComponentSettingTable","Select table appearance.","テーブルを変更できます。","可更换桌面。
+Select table appearance."
+"ComponentSettingDice","Select dice appearance.","ダイスを変更できます。","可更换骰子。
+Select dice appearance."
+"ComponentSettingBGM","Select BGM.","ＢＧＭを変更できます。","可更换 BGM。
+Select BGM."
+"ComponentSettingTitle","Implement customization?","このコンポーネントに変更しますか？","要换成这个组件吗？
+Implement customization?"
+"ComponentSettingTitleDo","Appearance changed.","変更しました。","已更换。
+Appearance changed."
+"ComponentTitle","Customization","コンポーネント変更","更换组件
+Customization"
+"ComponentSettingMenu","Customization components
+can only be changed in
+Options in the title
+screen menu.","コンポーネントの変更は<br>タイトル画面のオプションからのみ行なえます。","组件只能在<br>标题画面的“选项”中更换。
+Customization components
+can only be changed in
+Options in the title
+screen menu."
+"LanguageSettingText","Select text language.","ゲーム全体のテキスト言語を切り替えることができます。","可切换游戏文本语言。
+Select text language."
+"LanguageSettingVoice","Select voice-over language.","ゲーム全体のボイス言語を切り替えることができます。","可切换游戏语音语言。
+Select voice-over language."
+"SoundSettingBGM","Adjust music volume.","音楽の音量を変更できます。","可调整音乐音量。
+Adjust music volume."
+"SoundSettingSE","Adjust sound effect volume.","効果音の音量を変更できます。","可调整音效音量。
+Adjust sound effect volume."
+"SoundSettingVoice","Select voice-over volume.","ボイスの音量を変更できます。","可调整语音音量。
+Select voice-over volume."
+"OtherSettingVoiceTelop","Toggle subtitles.","ボイス字幕の表示を切り替えることができます。","可切换语音字幕显示。
+Toggle subtitles."
+"OtherSettingCredit","Roll credits or view license.","クレジットとライセンスを確認できます。","可查看制作人员与许可证。
+Roll credits or view license."
+"InitializingGuidance","Reset settings <br>?","全てのオプション設定をデフォルトに戻します。<br>
+設定を反映するにはタイトル画面に戻る必要があります。<br>
+タイトル画面に戻りますか？","将所有选项恢复为默认设置。<br>应用设置需要返回标题画面。<br>现在返回吗？
+Reset settings <br>?"
+"InitializingTitle","Restore Defaults","デフォルトに戻す","恢复默认设置
+Restore Defaults"
+"InitializingGameSet","Restore the default
+game settings?","ゲーム設定を<br>デフォルトに戻しますか？","要将游戏设置<br>恢复为默认设置吗？
+Restore the default
+game settings?"
+"InitializingComponentSet","Restore default
+components?","コンポーネント設定を<br>デフォルトに戻しますか？","要将组件设置<br>恢复为默认设置吗？
+Restore default
+components?"
+"InitializingLanguageSet","Restore default
+language?","言語設定を<br>デフォルトに戻しますか？","要将语言设置<br>恢复为默认设置吗？
+Restore default
+language?"
+"InitializingSoundSet","Restore default
+sound settings?","サウンド設定を<br>デフォルトに戻しますか？","要将声音设置<br>恢复为默认设置吗？
+Restore default
+sound settings?"
+"DoInitialization","Restore Defaults","デフォルトに戻す","恢复默认设置
+Restore Defaults"
+"WithoutChange","Back","戻る","返回
+Back"
+"TextHighlight","Emphasis","強調表示","强调显示
+Emphasis"
+"Valid","Display All","全て表示","全部显示
+Display All"
+"Invalid","Turn Some Off","一部オフ","关闭部分
+Turn Some Off"
+"Default","<size=""5"">Confirm:<br>A<br>Cancel:<br>B","<size=""5"">決定：<br>{BUTTON@A:sp_button-jump}<br>キャンセル：<br>{BUTTON@B:sp_button-jump}","<size=""5"">确认：<br>{BUTTON@A:sp_button-jump}<br>取消：<br>{BUTTON@B:sp_button-jump}
+<size=""5"">Confirm:<br>A<br>Cancel:<br>B"
+"Reverse","<size=""5"">Confirm:<br>B<br>Cancel:<br>A","<size=""5"">決定：<br>{BUTTON@B:sp_button-jump}<br>キャンセル：<br>{BUTTON@A:sp_button-jump}","<size=""5"">确认：<br>{BUTTON@B:sp_button-jump}<br>取消：<br>{BUTTON@A:sp_button-jump}
+<size=""5"">Confirm:<br>B<br>Cancel:<br>A"
+"Default_Switch","<size=""5"">Confirm:<br>A<br>Cancel:<br>B","<size=""5"">決定：<br>A<br>キャンセル：<br>B","<size=""5"">确认：<br>A<br>取消：<br>B
+<size=""5"">Confirm:<br>A<br>Cancel:<br>B"
+"Reverse_Switch","<size=""5"">Confirm:<br>B<br>Cancel:<br>A","<size=""5"">決定：<br>B<br>キャンセル：<br>A","<size=""5"">确认：<br>B<br>取消：<br>A
+<size=""5"">Confirm:<br>B<br>Cancel:<br>A"
+"Default_PS","<size=""5"">Confirm:<br>〇<br>Cancel:<br>×","<size=""5"">決定：<br>○<br>キャンセル：<br>×","<size=""5"">确认：<br>○<br>取消：<br>×
+<size=""5"">Confirm:<br>〇<br>Cancel:<br>×"
+"Reverse_PS","<size=""5"">Confirm:<br>×<br>Cancel:<br>〇","<size=""5"">決定：<br>×<br>キャンセル：<br>○","<size=""5"">确认：<br>×<br>取消：<br>○
+<size=""5"">Confirm:<br>×<br>Cancel:<br>〇"
+"Default_XBOX","<size=""5"">Confirm:<br>B<br>Cancel:<br>A","<size=""5"">決定：<br>B<br>キャンセル：<br>A","<size=""5"">确认：<br>B<br>取消：<br>A
+<size=""5"">Confirm:<br>B<br>Cancel:<br>A"
+"Reverse_XBOX","<size=""5"">Confirm:<br>A<br>Cancel:<br>B","<size=""5"">決定：<br>A<br>キャンセル：<br>B","<size=""5"">确认：<br>A<br>取消：<br>B
+<size=""5"">Confirm:<br>A<br>Cancel:<br>B"
+"Default_PC","<size=""5"">Confirm:<br>Enter<br>Cancel:<br>Backspace","<size=""5"">決定：<br>Enterキー<br>キャンセル：<br>Backspaceキー","<size=""5"">确认：<br>Enter 键<br>取消：<br>Backspace 键
+<size=""5"">Confirm:<br>Enter<br>Cancel:<br>Backspace"
+"Reverse_PC","<size=""5"">Confirm:<br>Backspace<br>Cancel:<br>Enter","<size=""5"">決定：<br>Backspaceキー<br>キャンセル：<br>Enterキー","<size=""5"">确认：<br>Backspace 键<br>取消：<br>Enter 键
+<size=""5"">Confirm:<br>Backspace<br>Cancel:<br>Enter"
+"Default_OTHER","<size=""5"">Confirm:<br><sprite=5><br>Cancel:<br><sprite=6>","<size=""5"">決定：<br><sprite=5><br>キャンセル：<br><sprite=6>","<size=""5"">确认：<br><sprite=5><br>取消：<br><sprite=6>
+<size=""5"">Confirm:<br><sprite=5><br>Cancel:<br><sprite=6>"
+"Reverse_OTHER","<size=""5"">Confirm:<br><sprite=6><br>Cancel:<br><sprite=5>","<size=""5"">決定：<br><sprite=6><br>キャンセル：<br><sprite=5>","<size=""5"">确认：<br><sprite=6><br>取消：<br><sprite=5>
+<size=""5"">Confirm:<br><sprite=6><br>Cancel:<br><sprite=5>"
+"Special","<size=""5"">Compatible with<br>AZERTY keyboard layout.","<size=""5"">キーボードの<br>AZERTY配列に<br>対応します。","<size=""5"">支持<br>AZERTY 键盘布局。
+<size=""5"">Compatible with<br>AZERTY keyboard layout."
+"KeyCamera","Camera Controls","カメラ操作","镜头操作
+Camera Controls"
+"KeyMove","Avatar Movement","コマの移動","棋子移动
+Avatar Movement"
+"FullScreen","Full Screen","フルスクリーン","全屏
+Full Screen"
+"FullScreenOn_old","<size=""5"">Full Screen<br>On","<size=""5"">フルスクリーン<br>有効","<size=""5"">全屏<br>开启
+<size=""5"">Full Screen<br>On"
+"FullScreenOn","<size=""5"">Full Screen<br>On","<size=""5"">フルスクリーン<br>有効","<size=""5"">全屏<br>开启
+<size=""5"">Full Screen<br>On"
+"FullScreenOff_old","<size=""5"">Full Screen<br>Off","<size=""5"">フルスクリーン<br>無効","<size=""5"">全屏<br>关闭
+<size=""5"">Full Screen<br>Off"
+"FullScreenOff","<size=""5"">Full Screen<br>Off","<size=""5"">フルスクリーン<br>無効","<size=""5"">全屏<br>关闭
+<size=""5"">Full Screen<br>Off"
+"BorderlessOn","Borderless Window","<size=""5"">ボーダーレス<br>ウィンドウ","<size=""5"">无边框<br>窗口
+Borderless Window"
+"GameSpeedSetting","Game Speed","ゲーム速度","游戏速度
+Game Speed"
+"GameSpeedNotice","          <size=""7"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the Y button</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>Ｙボタンを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""7"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 Y 键</highlight>也可随时切换速度。
+          <size=""7"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the Y button</highlight> in the field."
+"GameSpeedNotice_Switch","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the Y button</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>Ｙボタンを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 Y 键</highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the Y button</highlight> in the field."
+"GameSpeedNotice_PS","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the □ button</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>□ボタンを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 □ 键</highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the □ button</highlight> in the field."
+"GameSpeedNotice_XBOX","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the X button</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>Ｘボタンを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 X 键</highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the X button</highlight> in the field."
+"GameSpeedNotice_PC","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the R key</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>Ｒキーを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 R 键</highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the R key</highlight> in the field."
+"GameSpeedNotice_OTHER","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding <sprite=8></highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight><sprite=8>を長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按 <sprite=8></highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding <sprite=8></highlight> in the field."
+"GameSpeedNotice_MOBILE","             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the screen</highlight> in the field.","　　　　　　<size=""7"">注意！
+<size=""2.5"">「高速」にすると、ゲームマスターが全力のカード捌きを行い、ゲーム速度が上昇します（一部適用されない箇所があります）。しかし、ゲームマスターの身体に甚大な負担がかかるため、ゲーム動作が不安定になる事があります。その際は「通常」に戻してください。また、ゲームを終了した時も「通常」に戻ります。ちなみに、フィールドで<highlight>画面タップを長押し</highlight>することでも、設定の切り替えが可能です。","<size=""6"">注意！
+<size=""3"">选择“高速”后，游戏主持人会使出浑身解数飞速翻牌，让游戏节奏加快（部分场景除外）。不过，这对主持人的身体负担极大，游戏偶尔可能变得……不太正常。遇到这种情况，请将速度改回“普通”。退出游戏后，速度也会恢复为“普通”。另外，在地图上<highlight>长按画面</highlight>也可随时切换速度。
+             <size=""6"">Caution!
+<size=""3"">At High Speed, the game master will do his best to get through the cards as quickly as possible (though some cards refuse to be rushed). Due to the enormous toll this takes on the game master's body, however, the game may start to act...strange. If that happens, please reset the speed to Normal. Game speed will also reset to Normal upon closing the software. Oh, and one more thing: you can always switch the speed by <highlight>pressing and holding the screen</highlight> in the field."
+"GameSpeedNormal","Normal","通常","普通
+Normal"
+"GameSpeedHigh","High Speed","高速","高速
+High Speed"
+"MultiplicationSymbol","x","x","×
+x"
+"LanguageJapan","日本語","日本語","日本語"
+"LanguageEnglish","English","English","英语
+English"
+"LanguageFrench","Français","Français","法语
+Français"
+"LanguageGerman","Deutsch","Deutsch","德语
+Deutsch"
+"LanguageItalian","Italiano","Italiano","意大利语
+Italiano"
+"LanguageSpanish","Español","Español","西班牙语
+Español"
+"LanguageVoiceJapan","Japanese","日本語","日语
+Japanese"
+"LanguageVoiceEnglish","English","英語","英语
+English"
+"SoundNone","Mute","なし","静音
+Mute"
+"SoundMin","Quiet","小さい","小
+Quiet"
+"SoundMiddle","Normal","普通","普通
+Normal"
+"SoundLittleLarge","Louder","少し大きい","较大
+Louder"
+"SoundLarge","Loudest","大きい","最大
+Loudest"
+"BackToTitle","Title Screen","タイトルに<br>戻る","返回<br>标题画面
+Title Screen"
+"ExitGame","Quit Game","ゲームを<br>終了する","退出<br>游戏
+Quit Game"
+"DoDataInitialization","Reset Data","データを<br>初期化する","初始化<br>数据
+Reset Data"
+"DoDataInitialization_2","Resetting data will
+delete all system and
+save data.
+Are you sure?","セーブデータ、システムデータを全て削除してデータを初期化します。<br>よろしいですか？","初始化将删除全部保存数据和系统数据。<br>确定继续吗？
+Resetting data will
+delete all system and
+save data.
+Are you sure?"
+"DoDataInitialization_3","Reset data
+cannot be restored.
+Are you sure you're sure?","初期化を行うと元には戻せません。<br>本当によろしいですか？","初始化后无法恢复。<br>真的确定吗？
+Reset data
+cannot be restored.
+Are you sure you're sure?"
+"DoDataInitializationFinish","Data reset.
+Returning to title.","データを初期化しました。<br>タイトルに戻ります。","数据已初始化。<br>即将返回标题画面。
+Data reset.
+Returning to title."
+"InitializeTitle","Initialize","デフォルト","默认设置
+Initialize"
+"InitializeComplateNotice","Default settings
+restored.","設定をデフォルトに戻しました。","已恢复默认设置。
+Default settings
+restored."
+"LanguageTitle","Language","言語設定","语言设置
+Language"
+"LanguageGuidance","You need to return to 
+the title screen to 
+apply these changes. 
+Return now?","設定を反映するには、タイトル画面に戻る必要があります。タイトルに戻りますか？","应用设置需要返回标题画面。要现在返回吗？
+You need to return to 
+the title screen to 
+apply these changes. 
+Return now?"
+"LanguageNotice","Returning to the title screen.","タイトル画面に戻ります。","即将返回标题画面。
+Returning to the title screen."
+"VoiceTelopOn","Subs On","字幕オン","字幕开启
+Subs On"
+"VoiceTelopOff","Subs Off","字幕オフ","字幕关闭
+Subs Off"
+"ReturnTitleDialog","Game progress will
+be lost if you return
+without saving.
+Return to the title screen?","セーブせずに戻るとゲーム進行が失われてしまいます。タイトルに戻りますか？","若不保存便返回，当前游戏进度将会丢失。要返回标题画面吗？
+Game progress will
+be lost if you return
+without saving.
+Return to the title screen?"
+"ReturnTitleDialogTitle","Return to the title screen?","タイトルに戻りますか？","要返回标题画面吗？
+Return to the title screen?"
+"ExitGameDialog","Game progress will
+be lost if you quit
+without saving.
+Quit game?","セーブせずに終了するとゲーム進行が失われてしまいます。ゲームを終了しますか？","若不保存便退出，当前游戏进度将会丢失。要退出游戏吗？
+Game progress will
+be lost if you quit
+without saving.
+Quit game?"
+"ExitGameDialogTitle","Quit game?","ゲームを終了しますか？","要退出游戏吗？
+Quit game?"
+"Cancel","Cancel","やめる","取消
+Cancel"
+"ShopNotEquipable","Cannot equip","装備不可","无法装备
+Cannot equip"
+"ShopEquipable","Available","装備可","可装备
+Available"
+"ShopEquipped","Current Gear","装備中","装备中
+Current Gear"
+"ShopHaveEquipNum","Gear Owned","装備所持数","持有装备数
+Gear Owned"
+"ShopHaveItemNum","Items Owned","アイテム所持数","持有道具数
+Items Owned"
+"ShopBuy","Buy","購入","购买
+Buy"
+"ShopBuyAndEquip","Buy and Equip","購入して装備する","购买并装备
+Buy and Equip"
+"ShopForBuy","Buy","購入する","购买
+Buy"
+"ShopBuyQuit","Never Mind","やめておく","算了
+Never Mind"
+"ShopAddBuyNum","Buy More","購入数を増やす","增加购买数
+Buy More"
+"ShopDecBuyNum","Buy Fewer","購入数を減らす","减少购买数
+Buy Fewer"
+"ShopNotEnoughMoney","You Don't Have Enough Gold","所持金が足りません","金币不足
+You Don't Have Enough Gold"
+"ShopItemCapacityOver","You Don't Have Enough Room","これ以上持てません","无法再持有
+You Don't Have Enough Room"
+"ShopEquipCapacityOver","You Don't Have Enough Room","これ以上持てません","无法再持有
+You Don't Have Enough Room"
+"ShopEquipCharacterConf","Select who will equip {0}.","「{0}」を<br>装備させたい人を<br>選んでください。","请选择要装备<br>“{0}”的角色。
+Select who will equip {0}."
+"ShopEquippe","{0} is all set.","{0}が<br>装備しました。","{0}<br>已装备完毕。
+{0} is all set."
+"ShopBuyThankYou","Purchased {0} × {2}. 
+
+You have {1}G left.","「{0}」を<br>{2}個買いました。<br><br>君の所持金が<br>{1}Ｇになりました。","已购买“{0}”<br>{2} 个。<br><br>剩余金币<br>{1} G。
+Purchased {0} × {2}. 
+
+You have {1}G left."
+"ShopSellThankYou","{0} sold.
+
+You have {1}G.","「{0}」を<br>売りました。<br><br>君の所持金が<br>{1}Ｇになりました。","已卖出“{0}”。<br><br>现有金币<br>{1} G。
+{0} sold.
+
+You have {1}G."
+"ShopToBuyConfMax","You can buy up to {0} at a time.<br>","まとめて買えるのは<br>{0}個までです。<br>","一次最多购买<br>{0} 个。<br>
+You can buy up to {0} at a time.<br>"
+"ShopToBuyConf","Buy {0} × {1}? 
+That'll be 
+{2}G.","「{0}」を<br>{1}個買いますか？<br><br>代金は{2}Ｇです。","要购买“{0}”<br>{1} 个吗？<br><br>价格为 {2} G。
+Buy {0} × {1}? 
+That'll be 
+{2}G."
+"ShopToHaveNumConf","({0} owned.)","（現在の所持数：{0}個）","（当前持有：{0} 个）
+({0} owned.)"
+"ShopSale","Sell","売却","出售
+Sell"
+"ShopNotForSale","Can't be sold.","売却不可","无法出售
+Can't be sold."
+"ShopWhatSell","Select what you'd like to sell.","売りたい物を<br>選んでください。","请选择<br>要出售的物品。
+Select what you'd like to sell."
+"ShopSellItem","Items","アイテムを売りたい","出售道具
+Items"
+"ShopSellEquip","Equipment","装備を売りたい","出售装备
+Equipment"
+"ShopSellQuit","Never Mind","やめておく","算了
+Never Mind"
+"ShopSellSelectConf","{0}? 
+I can offer 
+{1}G for that.","「{0}」を<br>売りますか？<br><br>売却額は{1}Ｇです。","要出售“{0}”吗？<br><br>售价为 {1} G。
+{0}? 
+I can offer 
+{1}G for that."
+"ShopSellSelectYes","Deal","売却する","成交
+Deal"
+"ShopNotHaveSellItem","You Have No Items","アイテムがありません","没有道具
+You Have No Items"
+"ShopNotHaveSellEquip","You Have No Equipment","装備品がありません","没有装备
+You Have No Equipment"
+"ShopHaveItem","Items","所持アイテム","持有道具
+Items"
+"ShopSoldOut","Sold Out","売り切れ","售罄
+Sold Out"
+"ShopNotes","<highlight>Note:</highlight>
+This content is also available in a collected set. Please make your purchase carefully if you do not wish to purchase the same content more than once.","<highlight>＜注意＞</highlight><br>
+こちらの商品が含まれたコンポーネントセットもございます。重複購入にご注意ください。","<highlight>＜注意＞</highlight><br>本商品也包含在组件套装中。为免重复购买，请仔细确认。
+<highlight>Note:</highlight>
+This content is also available in a collected set. Please make your purchase carefully if you do not wish to purchase the same content more than once."
+"MobileShopBuyThankYou","{0} purchased.","「{0}」を<br>購入しました。","已购买<br>“{0}”。
+{0} purchased."
+"ShopLaw","Applicable in regards to
+transactions in Japan.","特定商取引法に<br>関する表示","日本《特定商业交易法》<br>相关说明
+Applicable in regards to
+transactions in Japan."
+"ShopPurchased","Purchased","購入済み","已购买
+Purchased"
+"AppstoreHeadsUp1","Prices are affected by Apple Inc.'s content distribution price.","価格は、Apple Inc.のコン
+テンツ配信価格に影響を受
+けます。","价格会受 Apple Inc. 内容分发价格影响。
+Prices are affected by Apple Inc.'s content distribution price."
+"AppstoreHeadsUp2","If the price at the time of payment differs from the displayed price due to a change in the content distribution price of Apple Inc., the price at the time of payment will take precedence.","Apple Inc.のコンテンツ配
+信価格変更により、決済時
+の価格が表示価格と異なる
+場合は、決済時の価格が優
+先されます。","若因 Apple Inc. 调整内容分发价格，导致结算价格与显示价格不同，则以结算时价格为准。
+If the price at the time of payment differs from the displayed price due to a change in the content distribution price of Apple Inc., the price at the time of payment will take precedence."
+"AppstoreHeadsUp3","Please check the price on the following screen carefully before making your purchase.","次の画面で表示される価格
+をよくご確認の上、ご購入
+ください。","购买前请仔细确认下一画面显示的价格。
+Please check the price on the following screen carefully before making your purchase."
+"ShopViewProduct","View Product","商品を見る","查看商品
+View Product"
+"MultiNamePlayer1","Player A","Player A","玩家 A
+Player A"
+"MultiNamePlayer2","Player B","Player B","玩家 B
+Player B"
+"MultiNamePlayer3","Player C","Player C","玩家 C
+Player C"
+"MultiNamePlayer4","Player D","Player D","玩家 D
+Player D"
+"MultiNamePlayer1Active","Waiting for other players","他プレイヤー<br>操作中","等待其他玩家<br>操作
+Waiting for other players"
+"MultiNamePlayer2Active","Waiting for other players","他プレイヤー<br>操作中","等待其他玩家<br>操作
+Waiting for other players"
+"MultiNamePlayer3Active","Waiting for other players","他プレイヤー<br>操作中","等待其他玩家<br>操作
+Waiting for other players"
+"MultiNamePlayer4Active","Waiting for other players","他プレイヤー<br>操作中","等待其他玩家<br>操作
+Waiting for other players"
+"MultiSharedCardPlateName","Pot","共有置場","公共牌区
+Pot"
+"MultiAddJokerTitle","Add Joker","ジョーカー追加","加入小丑牌
+Add Joker"
+"MultiAddJoker","Less than half the deck remains. Two Jokers will be added to the deck.","山札の残りが<br>半分以下になりました。<br><br>山札にジョーカーが<br>2枚追加されます。","牌堆已不足一半。<br><br>将加入 2 张小丑牌。
+Less than half the deck remains. Two Jokers will be added to the deck."
+"MultiTurnStartTitle","Start of Turn","ターン開始","回合开始
+Start of Turn"
+"MultiTurnStartMessage","{0}'s turn.","{0}のターンです。","轮到 {0}。
+{0}'s turn."
+"MultiYourTurnStartMessage","<highlight>It's your turn,</highlight> {0}.","{0}、<br><highlight>君のターンです</highlight>。","{0}，<br><highlight>轮到你了</highlight>。
+<highlight>It's your turn,</highlight> {0}."
+"MultiTurnSkipTitle","Pass","1回休み","休息一回合
+Pass"
+"MultiTurnSkip","You passed this turn.","このターンは<br>1回休みでした。","本回合<br>休息。
+You passed this turn."
+"MultiTurnTakeoverTitle","Capture","乗っ取り","接管
+Capture"
+"MultiTurnTakeover","{0} takes action this turn.","このターンは<br>{0}が<br>操作を行います。","本回合由<br>{0}<br>操作。
+{0} takes action this turn."
+"MultiDrawEventCardTitle","Event Phase","イベントフェイズ","事件阶段
+Event Phase"
+"MultiDrawEventCardMessage","Anything could happen...good or bad. Draw an event card?","吉と出るか凶と出るか……<br><br>イベントカードを<br>引きますか？","是吉是凶……<br><br>要抽事件卡吗？
+Anything could happen...good or bad. Draw an event card?"
+"MultiForcedDrawEventCardMessage","Your opponent's <highlight>Jack card set</highlight> forces you to draw an event card.","対戦相手の持つ<highlight>Jのカード<br>セット</highlight>の効果により、<br>必ずイベントカードを<br>引かなければいけません。","受对手 <highlight>J 牌<br>组合</highlight>效果影响，<br>必须抽取事件卡。
+Your opponent's <highlight>Jack card set</highlight> forces you to draw an event card."
+"MultiForcedNotDrawEventCardMessage","You cannot draw event cards due to the effects of your opponent's <highlight>K card set</highlight>.","対戦相手の持つ<highlight>Kのカード<br>セット</highlight>の効果により、<br>イベントカードを<br>引くことが出来ません。","受对手 <highlight>K 牌<br>组合</highlight>效果影响，<br>无法抽取事件卡。
+You cannot draw event cards due to the effects of your opponent's <highlight>K card set</highlight>."
+"MultiDrawPlayingCardTitle","Draw Phase","ドローフェイズ","抽牌阶段
+Draw Phase"
+"MultiDrawPlayingCardMessage","Draw {0} card(s) from the deck.","山札からカードが<br>{0}枚配られます。","从牌堆抽取<br>{0} 张牌。
+Draw {0} card(s) from the deck."
+"MultiOneDrawPlayingCardMessage","Your opponent played a skill that lowered your draw limit by 1.","対戦相手から受けた<br>スキル効果により<br>配られる手札が1枚<br>減らされます。","受对手技能影响，<br>本次少抽 1 张牌。
+Your opponent played a skill that lowered your draw limit by 1."
+"MultiNotDrawPlayingCardMessage","Your opponent played a skill that prevents you from drawing any cards.","対戦相手から受けた<br>スキル効果により<br>配られる手札が<br>なくなります。","受对手技能影响，<br>本次无法抽牌。
+Your opponent played a skill that prevents you from drawing any cards."
+"MultiCreateCardSetTitle","Set Phase","セットフェイズ","组牌阶段
+Set Phase"
+"MultiCreateCardSetMessage","Complete a set of <highlight>2–3 cards of the same number</highlight> from your hand or the pot, or <highlight>3 consecutively numbered cards</highlight>.","手札と共有置場の中から<br><highlight>同じ数字を2～3枚</highlight>、<br>または<highlight>連続した数字3枚</highlight>で<br>セットを作りましょう。","从手牌与公共牌区中，<br>以 <highlight>2～3 张相同数字的牌</highlight>，<br>或 <highlight>3 张数字连续的牌</highlight><br>组成牌组。
+Complete a set of <highlight>2–3 cards of the same number</highlight> from your hand or the pot, or <highlight>3 consecutively numbered cards</highlight>."
+"MultiConfCardSetTitle","Set Phase","セットフェイズ","组牌阶段
+Set Phase"
+"MultiConfCardSetNoneSkillMessage","This set is worth <highlight>{0}</highlight> points. Make a set with the selected cards?","このセットは<highlight>{0}</highlight>点です。<br>選択したカードでセットを作成しますか？","这组牌值 <highlight>{0}</highlight> 分。<br>要用所选卡牌组成牌组吗？
+This set is worth <highlight>{0}</highlight> points. Make a set with the selected cards?"
+"MultiConfCardSetAcitveSkillMessage","This set is worth <highlight>{0}</highlight> points. It will also <highlight>trigger a skill effect</highlight>. Make a set with the selected cards?","このセットは<highlight>{0}</highlight>点です。<br>さらに、<highlight>スキルも発動</highlight>します。選択したカードでセットを作成しますか？","这组牌值 <highlight>{0}</highlight> 分，<br>还会 <highlight>发动技能</highlight>。要用所选卡牌组成牌组吗？
+This set is worth <highlight>{0}</highlight> points. It will also <highlight>trigger a skill effect</highlight>. Make a set with the selected cards?"
+"MultiConfCardSetSkillBindMessage","This set is worth <highlight>{0}</highlight> points. However, due to <highlight>Skillbind</highlight>, the  <highlight>skill will not be triggered</highlight>. Make a set with the selected cards?","このセットは<highlight>{0}</highlight>点です。<br>しかし、<highlight>スキルバインド</highlight>の効果で<highlight>スキルは発動しません</highlight>。選択したカードでセットを作成しますか？","这组牌值 <highlight>{0}</highlight> 分。<br>但受 <highlight>技能封锁</highlight> 影响，<highlight>技能不会发动</highlight>。要用所选卡牌组成牌组吗？
+This set is worth <highlight>{0}</highlight> points. However, due to <highlight>Skillbind</highlight>, the  <highlight>skill will not be triggered</highlight>. Make a set with the selected cards?"
+"MultiCreateCardSetNoneTargetMessage","Oh, no, you don't have any cards that make a set...","残念……セットを作れる組み合わせがないようです。","可惜……没有能组成牌组的组合。
+Oh, no, you don't have any cards that make a set..."
+"MultiNoTargetPlayerTitle","No Target","対象なし","无目标
+No Target"
+"MultiNoTargetPlayer","Except there's no opponent you can choose.","選べる相手がいません。","没有可选择的对手。
+Except there's no opponent you can choose."
+"MultiRollDiceTurnSkipTitle","Rest Dice","1回休みダイス","休息骰子
+Rest Dice"
+"MultiRollDiceTurnSkip","Rest if you roll {0} or lower.","ダイスを振って<br>{0}以下なら1回休み。","掷骰后若为<br>{0} 点以下，则休息 1 回合。
+Rest if you roll {0} or lower."
+"MultiRollDiceDestructionSetTitle","Dice Results","ダイスの結果","骰子结果
+Dice Results"
+"MultiRollDiceDestructionSetMessage","You rolled a {0}.
+
+Sets including {1} will be destroyed.","出目は{0}でした。<br><br>{1}が含まれているセットが破棄されます。","掷出了 {0} 点。<br><br>含有 {1} 的牌组将被丢弃。
+You rolled a {0}.
+
+Sets including {1} will be destroyed."
+"MultiRollDiceDestFillInTitle","Skull Soldier","スケルトン","骷髅兵
+Skull Soldier"
+"MultiRollDiceDestFillInMessage","The Skull Soldier was invoked! It'll be destroyed instead!","スケルトンの効果が発動！<br>代わりに破棄されます。","骷髅兵效果发动！<br>将由它代为丢弃！
+The Skull Soldier was invoked! It'll be destroyed instead!"
+"MultiAddOneTurnTitle","Extra Turn","ターン追加","追加回合
+Extra Turn"
+"MultiAddOneTurnMessage","This skill grants 1 more turn.","スキル効果により<br>もう１回行動できます。","受技能效果影响，<br>可再行动 1 回合。
+This skill grants 1 more turn."
+"MultiSkillTimingBeginingMyTurn","Always","スキル効果","始终
+Always"
+"MultiSkillTimingPassive","Always","スキル効果","始终
+Always"
+"MultiSkillTimingDrawCard","When you draw a card","カードを引いた際","抽牌时
+When you draw a card"
+"MultiSkillTimingCardSetPair","When a pair is formed","スキル効果","组成对子时
+When a pair is formed"
+"MultiSkillTimingCardSetRun","At the time of tripartite formation","チェーン効果","组成顺子时
+At the time of tripartite formation"
+"MultiDiscardCardSetTitle","Select Set to Discard","破棄セット選択","选择要丢弃的牌组
+Select Set to Discard"
+"MultiDiscardCardSetMessage","You can only have 3 sets. Choose one to get rid of.","3組までしか<br>セットは持てません。<br><br>破棄するセットを<br>選んでください。","最多只能持有 3 组牌。<br><br>请选择要丢弃的一组。
+You can only have 3 sets. Choose one to get rid of."
+"MultiDiscardPlayingCardTitle","Final Phase","エンドフェイズ","结束阶段
+Final Phase"
+"MultiDiscardPlayingCardMessage","Discard until you have 1 card in your hand. Discarded cards will be moved to the pot.","手札が1枚になるまで、<br>カードを捨てましょう。<br><br>捨てたカードは<br>共有置場に置かれます。","请丢牌，直至手中只剩 1 张。<br><br>丢弃的牌会放入公共牌区。
+Discard until you have 1 card in your hand. Discarded cards will be moved to the pot."
+"MultiGiveUpConfTitle","Give up","ギブアップ","认输
+Give up"
+"MultiGiveUpConfMessage","Give up and end the game?","ギブアップして<br>ゲームを終了しますか？","要认输并<br>结束游戏吗？
+Give up and end the game?"
+"PriceUnit","<size=80%>Ｇ</size>","<size=80%>Ｇ</size>","<size=80%>G</size>
+<size=80%>Ｇ</size>"
+"Remaining","Cards Remaining","残り枚数","剩余卡牌
+Cards Remaining"
+"MultiPlayAgainConfTitle","Play Again","もう一度遊ぶ","再来一局
+Play Again"
+"MultiPlayAgainConfMessage","Play again?","もう一度プレイしますか？","要再玩一次吗？
+Play again?"
+"MultiCreateCardSetNoneTargetTitle","Set Phase","セットフェイズ","组牌阶段
+Set Phase"
+"MultiGameResultCardTitle","Results","リザルト","结果
+Results"
+"MultiGameResultCardMessage","That's the game! Now then, who is our winner?","ゲーム終了です。<br><br>今回の勝者は誰でしょう？","游戏结束！<br><br>这次谁会胜出呢？
+That's the game! Now then, who is our winner?"
+"MultiRankingCardTitle","Rankings","ランキング","排名
+Rankings"
+"MultiRankingCardMessage","Coming in at number {2} with {1} points is {0}.","{0}が<br>{1}ポイントで{2}位です。","{0}<br>以 {1} 分位列第 {2} 名。
+Coming in at number {2} with {1} points is {0}."
+"MultiRank1Message","おめでとう！","おめでとう！","おめでとう！"
+"MultiRank2Message","よくやったな！","よくやったな！","よくやったな！"
+"MultiRank3Message","今回は運がわるかったな。","今回は運がわるかったな。","今回は運がわるかったな。"
+"MultiRank4Message","貧乏神が取り付いてしまいました。","貧乏神が取り付いてしまいました。","貧乏神が取り付いてしまいました。"
+"MultiRankPlate","{0}","{0}位","第 {0} 名
+{0}"
+"MultiResultWaitTitle","Play Again","もう一度遊ぶ","再来一局
+Play Again"
+"MultiResultWait","Waiting for other players selection.","他のプレイヤーが<br>選択するのを<br>待っています。","正在等待<br>其他玩家选择。
+Waiting for other players selection."
+"MultiStartPlayerBeforeTitle","First Player","スタートプレイヤー","先手玩家
+First Player"
+"MultiStartPlayerBeforeMessage","Let’s see who will go first.","今回のスタートプレイヤーを決めましょう。","来决定这局谁先开始吧。
+Let’s see who will go first."
+"MultiStartPlayerAfterTitle","First Player","スタートプレイヤー","先手玩家
+First Player"
+"MultiStartPlayerAfterMessage","{0} will go first.","スタートプレイヤーは<br>{0}<br>に決まりました。","先手玩家确定为<br>{0}。
+{0} will go first."
+"switch_button-a","the A Button","Ａボタン","A 键
+the A Button"
+"switch_button-b","the B Button","Ｂボタン","B 键
+the B Button"
+"switch_button-x","the X Button","Ｘボタン","X 键
+the X Button"
+"switch_button-y","the Y Button","Ｙボタン","Y 键
+the Y Button"
+"switch_button-l","the L Button","Ｌボタン","L 键
+the L Button"
+"switch_button-r","the R Button","Ｒボタン","R 键
+the R Button"
+"switch_button-plus","the + Button","＋ボタン","+ 键
+the + Button"
+"switch_button-minus","the - Button","－ボタン","- 键
+the - Button"
+"switch_stick-left","the Left Stick","Ｌスティック","左摇杆
+the Left Stick"
+"switch_stick-right","the Right Stick","Ｒスティック","右摇杆
+the Right Stick"
+"ps4_button-a","the ○ button","○ボタン","○ 键
+the ○ button"
+"ps4_button-b","the × button","×ボタン","× 键
+the × button"
+"ps4_button-x","the △ button","△ボタン","△ 键
+the △ button"
+"ps4_button-y","the □ button","□ボタン","□ 键
+the □ button"
+"ps4_button-l","the L1 button","Ｌ１ボタン","L1 键
+the L1 button"
+"ps4_button-r","the R1 button","Ｒ１ボタン","R1 键
+the R1 button"
+"ps4_button-plus","the OPTIONS button","OPTIONSボタン","OPTIONS 键
+the OPTIONS button"
+"ps4_button-minus","the Touch pad","タッチパッド","触摸板
+the Touch pad"
+"ps4_stick-left","the Left stick","左スティック","左摇杆
+the Left stick"
+"ps4_stick-right","the Right stick","右スティック","右摇杆
+the Right stick"
+"xbox_button-a","the B button","Ｂボタン","B 键
+the B button"
+"xbox_button-b","the A button","Ａボタン","A 键
+the A button"
+"xbox_button-x","the Y button","Ｙボタン","Y 键
+the Y button"
+"xbox_button-y","the X button","Ｘボタン","X 键
+the X button"
+"xbox_button-l","the LB button","ＬＢボタン","LB 键
+the LB button"
+"xbox_button-r","the RB button","ＲＢボタン","RB 键
+the RB button"
+"xbox_button-plus","the Menu button","メニューボタン","菜单键
+the Menu button"
+"xbox_button-minus","the View Button","ビューボタン","视图键
+the View Button"
+"xbox_stick-left","the Left stick","左スティック","左摇杆
+the Left stick"
+"xbox_stick-right","the Right stick","右スティック","右摇杆
+the Right stick"
+"pc_button-a","the Enter key","Enterキー","Enter 键
+the Enter key"
+"pc_button-b","the Backspace key","Backspaceキー","Backspace 键
+the Backspace key"
+"pc_button-x","the E key","Ｅキー","E 键
+the E key"
+"pc_button-y","the R key","Ｒキー","R 键
+the R key"
+"pc_button-l","the N key","Ｎキー","N 键
+the N key"
+"pc_button-r","the M key","Ｍキー","M 键
+the M key"
+"pc_button-plus","the Esc key","Escキー","Esc 键
+the Esc key"
+"pc_button-minus","the X key","Ｘキー","X 键
+the X key"
+"pc_stick-left","the WASD keys","ＷＡＳＤキー","WASD 键
+the WASD keys"
+"pc_fr_button-a","the Enter key","Enterキー","Enter 键
+the Enter key"
+"pc_fr_button-b","the Backspace key","Backspaceキー","Backspace 键
+the Backspace key"
+"pc_fr_button-x","the E key","Ｅキー","E 键
+the E key"
+"pc_fr_button-y","the R key","Ｒキー","R 键
+the R key"
+"pc_fr_button-l","the N key","Ｎキー","N 键
+the N key"
+"pc_fr_button-r","the , key","，キー",", 键
+the , key"
+"pc_fr_button-plus","the Esc key","Escキー","Esc 键
+the Esc key"
+"pc_fr_button-minus","the X key","Ｘキー","X 键
+the X key"
+"pc_fr_stick-left","the ZQSD keys","ＺＱＳＤキー","ZQSD 键
+the ZQSD keys"
+"pc_stick-right","the Arrow keys","矢印キー","方向键
+the Arrow keys"
+"pc_fr_stick-right","the Arrow keys","矢印キー","方向键
+the Arrow keys"
+"other_button-a","<sprite=5>","<sprite=5>","<sprite=5>
+<sprite=5>"
+"other_button-b","<sprite=6>","<sprite=6>","<sprite=6>
+<sprite=6>"
+"other_button-x","<sprite=7>","<sprite=7>","<sprite=7>
+<sprite=7>"
+"other_button-y","<sprite=8>","<sprite=8>","<sprite=8>
+<sprite=8>"
+"other_button-l","<sprite=13>","<sprite=13>","<sprite=13>
+<sprite=13>"
+"other_button-r","<sprite=14>","<sprite=14>","<sprite=14>
+<sprite=14>"
+"other_button-plus","<sprite=9>","<sprite=9>","<sprite=9>
+<sprite=9>"
+"other_button-minus","<sprite=10>","<sprite=10>","<sprite=10>
+<sprite=10>"
+"other_stick-left","<sprite=11>","<sprite=11>","<sprite=11>
+<sprite=11>"
+"other_stick-right","<sprite=12>","<sprite=12>","<sprite=12>
+<sprite=12>"
+"sp_button-menu","Menu","メニュー","菜单
+Menu"
+"sp_button-next","next","次の目的","下一目标
+next"
+"sp_button-status","カード詳細をタップ","カード詳細をタップ","カード詳細をタップ"
+"sp_button-item","アイテムをタップ","アイテムをタップ","アイテムをタップ"
+"sp_button-selectCard","選択肢カード","選択肢カード","選択肢カード"
+"sp_button-jump","直接タップすること","直接タップすること","直接タップすること"
+"sp_button-tap","画面をタップ","画面をタップ","画面をタップ"
+"Continue","Continue","続きから遊ぶ","继续游戏
+Continue"
+"LoadGame","Continue","続きから遊ぶ","继续游戏
+Continue"
+"NewGame","New Game","最初から遊ぶ","新游戏
+New Game"
+"Option","Options","オプション","选项
+Options"
+"Credit","Credits","クレジット","制作人员
+Credits"
+"Shop","Shop","ショップ","商店
+Shop"
+"DLC","Add-On
+Content","追加<br>コンテンツ","附加<br>内容
+Add-On
+Content"
+"MultiTitle","Multiplayer Game Parlor","遊戯場で対戦","游艺场对战
+Multiplayer Game Parlor"
+"ShopTrialTransitionTitle","Add-On
+Content","追加コンテンツ","附加<br>内容
+Add-On
+Content"
+"ShopTrialTransitionPS4","Visit PlayStation™Store?","PlayStation™Storeに<br>移動しますか？","要前往<br>PlayStation™Store 吗？
+Visit PlayStation™Store?"
+"ShopTrialTransitionSwitch","Visit Nintendo eShop?","ニンテンドーｅショップに<br>移動しますか？","要前往<br>Nintendo eShop 吗？
+Visit Nintendo eShop?"
+"ShopTrialTransitionOther","Visit purchase page for add-on content?","追加コンテンツ購入ページに移動しますか？","要前往附加内容购买页面吗？
+Visit purchase page for add-on content?"
+"CreditThankyou","Thank you for playing!","Thank you<br>for<br>playing !","感谢<br>游玩！
+Thank you for playing!"
+"SaveClearData","Select a save file.","セーブする箇所を選んでください。","请选择保存位置。
+Select a save file."
+"CheckSaveClearData","Save finished game?","クリアした状態でセーブしますか？","要以通关状态保存吗？
+Save finished game?"
+"CheckTackOverData","Completed save data
+found. Do you want
+to carry this data
+over to a new game?","クリアデータがあります。<br>引き継いでゲームを開始しますか？","发现通关存档。<br>要继承数据开始新游戏吗？
+Completed save data
+found. Do you want
+to carry this data
+over to a new game?"
+"SaveNow","Saving","セーブ中","保存中
+Saving"
+"DeleteNow","Deleting file","削除中","删除中
+Deleting file"
+"LoadNow","Loading","ロード中","读取中
+Loading"
+"SaveDataTitle","Game Data","ゲームデータ","游戏数据
+Game Data"
+"SaveClearDataTitle","Clear Data","クリアデータ","通关数据
+Clear Data"
+"MultiDataTitle","Game Parlor Data","遊戯場データ","游艺场数据
+Game Parlor Data"
+"CreditSkipMessage","Press button again
+to skip credits.","もう一度ボタンを押すと<br>クレジットをスキップ<br>します。","再次按键即可<br>跳过制作人员名单。
+Press button again
+to skip credits."
+"CreditSkipMessageSP","Tap screen again to skip credits.","画面右下のカードを<br>もう一度タップすると<br>クレジットをスキップ<br>します。","再次点击画面右下角的卡牌<br>即可跳过制作人员名单。
+Tap screen again to skip credits."
+"You","YOU","あなた","你
+YOU"
+"Player","PLAYER{0}","Player {0}","玩家 {0}
+PLAYER{0}"
+"Npc","NPC","NPC","NPC
+NPC"
+"MutliLobby3","Saving","      セーブ中","保存中
+Saving"
+"MutliLobby4","Game Data","ゲームデータ","游戏数据
+Game Data"
+"MutliLobby5","Clear Data","クリアデータ","通关数据
+Clear Data"
+"AABDownloadTitle","Download ","ダウンロード ","下载
+Download "
+"AABDownload","Downloading data.<br>Please wait.","データをダウンロード<br>しています。<br>しばらくお待ち下さい。","正在下载数据。<br>请稍候。
+Downloading data.<br>Please wait."

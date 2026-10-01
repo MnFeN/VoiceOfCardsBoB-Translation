@@ -1,0 +1,65 @@
+```gitignore
+# ==============================
+# Visual Studio / .NET
+# ==============================
+
+.vs/
+.idea/
+
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+TestResults/
+*.trx
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Publish output
+publish/
+artifacts/
+
+# ==============================
+# Project-specific files
+# ==============================
+
+# Generated patched game files
+GeneratedGameFiles/**
+
+# Translation fonts
+# Translation CSV files are intentionally tracked.
+Translation/*.otf
+Translation/*.ttf
+Translation/*.ttc
+
+# Game backup files created by the patcher
+*.backup
+
+# ==============================
+# Temporary / generated files
+# ==============================
+
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+```

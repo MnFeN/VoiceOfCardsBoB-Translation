@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SourceCode/VoiceOfCardsBoB-Translation/VoiceOfCardsBoB-Translation.csproj" />
+  <Project Path="SourceCode/VoiceOfCardsBoB-Patcher/VoiceOfCardsBoB-Patcher.csproj" />
+</Solution>

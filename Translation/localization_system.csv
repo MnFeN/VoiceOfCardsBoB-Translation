@@ -1,0 +1,13 @@
+﻿"Key","English","Japanese","Target"
+"ShopBuyThankYou","Purchased {item} × {count}.<br><br>You have {gold}G left.","「{item}」を<br>{count}個買いました。<br><br>君の所持金が<br>{gold}Ｇになりました。","“{item}”<br>已购买 {count} 个。<br><br>剩余金额<br>{gold} G。
+Purchased {item} × {count}.<br><br>You have {gold}G left."
+"CharacterLevelUp","{characterName}<br>leveled up!","{characterName}の<br>レベルが上がりました！","{characterName}<br>升级了！
+{characterName}<br>leveled up!"
+"ShopSellThankYou","{item} sold.<br><br>You have {gold}G.","「{item}」を<br>売りました。<br><br>君の所持金が<br>{gold}Ｇになりました。","“{item}”<br>已卖出。<br><br>现有金额<br>{gold} G。
+{item} sold.<br><br>You have {gold}G."
+"SkillAcquire","Learned {skill}!","新たなスキル<br>「{skill}」を<br>習得しました！","新技能<br>“{skill}”<br>已习得！
+Learned {skill}!"
+"PassiveSkillAcquire","Acquired {skill}!","新たな特性<br>「{skill}」を<br>習得しました！","新特性<br>“{skill}”<br>已习得！
+Acquired {skill}!"
+"ShopEquippe","{character} is all set.","{character}が<br>装備しました。","{character}<br>已装备完毕。
+{character} is all set."
