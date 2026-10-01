@@ -1107,31 +1107,28 @@ next"
 Continue"
 "LoadGame","Continue","続きから遊ぶ","继续游戏
 Continue"
-"NewGame","New Game","最初から遊ぶ","新游戏
-New Game"
-"Option","Options","オプション","选项
-Options"
-"Credit","Credits","クレジット","制作人员
-Credits"
+"NewGame","New Game","最初から遊ぶ","新游戏"
+"Option","Options","オプション","选项"
+"Credit","Credits","クレジット","制作人员"
 "Shop","Shop","ショップ","商店
 Shop"
 "DLC","Add-On
-Content","追加<br>コンテンツ","附加<br>内容
+Content","追加<br>コンテンツ","追加内容
 Add-On
 Content"
 "MultiTitle","Multiplayer Game Parlor","遊戯場で対戦","游艺场对战
 Multiplayer Game Parlor"
 "ShopTrialTransitionTitle","Add-On
-Content","追加コンテンツ","附加<br>内容
+Content","追加コンテンツ","追加内容
 Add-On
 Content"
 "ShopTrialTransitionPS4","Visit PlayStation™Store?","PlayStation™Storeに<br>移動しますか？","要前往<br>PlayStation™Store 吗？
 Visit PlayStation™Store?"
 "ShopTrialTransitionSwitch","Visit Nintendo eShop?","ニンテンドーｅショップに<br>移動しますか？","要前往<br>Nintendo eShop 吗？
 Visit Nintendo eShop?"
-"ShopTrialTransitionOther","Visit purchase page for add-on content?","追加コンテンツ購入ページに移動しますか？","要前往附加内容购买页面吗？
+"ShopTrialTransitionOther","Visit purchase page for add-on content?","追加コンテンツ購入ページに移動しますか？","要前往追加内容购买页面吗？
 Visit purchase page for add-on content?"
-"CreditThankyou","Thank you for playing!","Thank you<br>for<br>playing !","感谢<br>游玩！
+"CreditThankyou","Thank you for playing!","Thank you<br>for<br>playing !","感谢游玩！
 Thank you for playing!"
 "SaveClearData","Select a save file.","セーブする箇所を選んでください。","请选择保存位置。
 Select a save file."
